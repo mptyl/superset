@@ -16,6 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+import { act } from 'react-dom/test-utils';
 import { fireEvent, render } from 'spec/helpers/testing-library';
 import Modal from 'src/components/Modal';
 import fetchMock from 'fetch-mock';
@@ -63,6 +64,7 @@ const props = {
   depth: 1,
   renderTabContent: true,
   editMode: false,
+  isComponentVisible: true,
   availableColumnCount: 12,
   columnWidth: 50,
   dashboardId: 1,
@@ -92,6 +94,10 @@ function setup(overrideProps, overrideState = {}) {
     },
   });
 }
+
+beforeEach(() => {
+  jest.clearAllMocks();
+});
 
 test('should render a Draggable', () => {
   // test just Tabs with no children Draggable
@@ -140,6 +146,23 @@ test('should call onChangeTab when a tab is clicked', () => {
   const newTab = getByRole('tab', { selected: false });
   fireEvent.click(newTab);
   expect(onChangeTab).toHaveBeenCalledTimes(1);
+});
+
+test('should trigger a window resize after tab activation', () => {
+  jest.useFakeTimers();
+  const dispatchEventSpy = jest.spyOn(window, 'dispatchEvent');
+  const { getByRole } = setup({ editMode: true });
+
+  fireEvent.click(getByRole('tab', { selected: false }));
+  act(() => {
+    jest.runOnlyPendingTimers();
+  });
+
+  expect(dispatchEventSpy).toHaveBeenCalledWith(expect.any(Event));
+  expect(dispatchEventSpy.mock.calls.at(-1)?.[0].type).toBe('resize');
+
+  dispatchEventSpy.mockRestore();
+  jest.useRealTimers();
 });
 
 test('should not call onChangeTab when anchor link is clicked', () => {

@@ -21,12 +21,17 @@ import { FeatureFlag, VizType } from '@superset-ui/core';
 import * as redux from 'redux';
 
 import Chart from 'src/dashboard/components/gridComponents/Chart';
+import ChartContainer from 'src/components/Chart/ChartContainer';
 import * as exploreUtils from 'src/explore/exploreUtils';
 import { sliceEntitiesForChart as sliceEntities } from 'spec/fixtures/mockSliceEntities';
 import mockDatasource from 'spec/fixtures/mockDatasource';
 import chartQueries, {
   sliceId as queryId,
 } from 'spec/fixtures/mockChartQueries';
+
+jest.mock('src/components/Chart/ChartContainer', () =>
+  jest.fn(() => <div data-test="chart-container" />),
+);
 
 const props = {
   id: queryId,
@@ -111,6 +116,10 @@ beforeAll(() => {
   }));
 });
 
+beforeEach(() => {
+  jest.clearAllMocks();
+});
+
 test('should render a SliceHeader', () => {
   const { getByTestId, container } = setup();
   expect(getByTestId('slice-header')).toBeInTheDocument();
@@ -120,6 +129,15 @@ test('should render a SliceHeader', () => {
 test('should render a ChartContainer', () => {
   const { getByTestId } = setup();
   expect(getByTestId('chart-container')).toBeInTheDocument();
+});
+
+test('should rerender chart container when chart becomes visible', () => {
+  const { rerender } = setup({ isComponentVisible: false });
+  expect(ChartContainer).toHaveBeenCalledTimes(1);
+
+  rerender(<Chart {...props} isComponentVisible />);
+
+  expect(ChartContainer).toHaveBeenCalledTimes(2);
 });
 
 test('should render a description if it has one and isExpanded=true', () => {

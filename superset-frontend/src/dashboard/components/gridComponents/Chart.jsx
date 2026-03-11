@@ -549,6 +549,7 @@ export default memo(Chart, (prevProps, nextProps) => {
       prevProps.dashboardId === nextProps.dashboardId &&
       prevProps.extraControls === nextProps.extraControls &&
       prevProps.handleToggleFullSize === nextProps.handleToggleFullSize &&
+      prevProps.isComponentVisible === nextProps.isComponentVisible &&
       prevProps.isFullSize === nextProps.isFullSize &&
       prevProps.setControlValue === nextProps.setControlValue &&
       prevProps.sliceName === nextProps.sliceName &&

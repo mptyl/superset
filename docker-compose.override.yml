@@ -1,0 +1,8 @@
+# Override locale: rimuove il port binding di superset_db sull'host
+# perché la porta 5432 è già occupata da supabase-pooler.
+# superset_db rimane raggiungibile dagli altri container Superset
+# tramite la rete Docker interna.
+services:
+  db:
+    ports:
+      - "127.0.0.1:15432:5432"
