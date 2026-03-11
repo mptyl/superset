@@ -176,6 +176,22 @@ const Tabs = (props: TabsProps): ReactElement => {
   }, [props.setActiveTab, prevActiveKey, activeKey]);
 
   useEffect(() => {
+    if (!props.isComponentVisible) {
+      return undefined;
+    }
+
+    // Hidden tab panes can initialize charts with zero-sized containers.
+    // Emit a resize after tab activation so chart plugins can re-measure.
+    const resizeTimer = window.setTimeout(() => {
+      window.dispatchEvent(new Event('resize'));
+    }, 0);
+
+    return () => {
+      window.clearTimeout(resizeTimer);
+    };
+  }, [activeKey, props.isComponentVisible]);
+
+  useEffect(() => {
     if (prevDashboardId && props.dashboardId !== prevDashboardId) {
       setSelectedTabIndex(initTabIndex);
       setActiveKey(initActiveKey);
