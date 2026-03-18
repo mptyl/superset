@@ -1,0 +1,59 @@
+slice_name: 'Pazienti con complicanze per fascia eta '
+description: null
+certified_by: null
+certification_details: null
+viz_type: pie
+params:
+  datasource: 29__table
+  viz_type: pie
+  slice_id: 195
+  groupby:
+  - fascia_eta
+  metric:
+    expressionType: SQL
+    hasCustomLabel: false
+    label: Pazienti con complicanze
+    optionName: metric_mart_paziente_superset_pazienti_con_complicanze
+    sqlExpression: SUM(CASE WHEN n_complicanze_totali > 0 THEN 1 ELSE 0 END)
+  adhoc_filters:
+  - clause: WHERE
+    comparator: No filter
+    expressionType: SIMPLE
+    operator: TEMPORAL_RANGE
+    subject: anno_ultima_procedura
+  row_limit: 100
+  sort_by_metric: true
+  color_scheme: supersetColors
+  show_labels_threshold: 5
+  roseType: radius
+  show_legend: true
+  legendType: plain
+  legendOrientation: left
+  label_type: key_value_percent
+  number_format: SMART_NUMBER
+  date_format: smart_date
+  show_labels: true
+  labels_outside: true
+  label_line: true
+  show_total: true
+  outerRadius: 80
+  donut: true
+  innerRadius: 30
+  extra_form_data: {}
+  dashboards:
+  - 21
+  - 23
+query_context: '{"datasource":{"id":29,"type":"table"},"force":false,"queries":[{"filters":[{"col":"anno_ultima_procedura","op":"TEMPORAL_RANGE","val":"No
+  filter"}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":["fascia_eta"],"metrics":[{"expressionType":"SQL","hasCustomLabel":false,"label":"Pazienti
+  con complicanze","optionName":"metric_mart_paziente_superset_pazienti_con_complicanze","sqlExpression":"SUM(CASE
+  WHEN n_complicanze_totali > 0 THEN 1 ELSE 0 END)"}],"orderby":[[{"expressionType":"SQL","hasCustomLabel":false,"label":"Pazienti
+  con complicanze","optionName":"metric_mart_paziente_superset_pazienti_con_complicanze","sqlExpression":"SUM(CASE
+  WHEN n_complicanze_totali > 0 THEN 1 ELSE 0 END)"},false]],"annotation_layers":[],"row_limit":100,"series_limit":0,"group_others_when_limit_reached":false,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{},"post_processing":[{"operation":"contribution","options":{"columns":["Pazienti
+  con complicanze"],"rename_columns":["Pazienti con complicanze__contribution"]}}]}],"form_data":{"datasource":"29__table","viz_type":"pie","slice_id":195,"groupby":["fascia_eta"],"metric":{"expressionType":"SQL","hasCustomLabel":false,"label":"Pazienti
+  con complicanze","optionName":"metric_mart_paziente_superset_pazienti_con_complicanze","sqlExpression":"SUM(CASE
+  WHEN n_complicanze_totali > 0 THEN 1 ELSE 0 END)"},"adhoc_filters":[{"clause":"WHERE","comparator":"No
+  filter","expressionType":"SIMPLE","operator":"TEMPORAL_RANGE","subject":"anno_ultima_procedura"}],"row_limit":100,"sort_by_metric":true,"color_scheme":"supersetColors","show_labels_threshold":5,"roseType":"radius","show_legend":true,"legendType":"plain","legendOrientation":"left","label_type":"key_value_percent","number_format":"SMART_NUMBER","date_format":"smart_date","show_labels":true,"labels_outside":true,"label_line":true,"show_total":true,"outerRadius":80,"donut":true,"innerRadius":30,"extra_form_data":{},"dashboards":[21,23],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: ea6cc24a-68c5-4acd-8432-acc856a0baa0
+version: 1.0.0
+dataset_uuid: c8ac9fa0-18d1-4def-a434-462355e8aac3

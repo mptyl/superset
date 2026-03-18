@@ -1,0 +1,105 @@
+dashboard_title: Reparto Aritmologia - Trend Dispositivi
+description: null
+css: ''
+slug: null
+certified_by: ''
+certification_details: ''
+published: false
+uuid: 3a3c25b9-e86d-4cc4-a5d7-d314b07bf612
+position:
+  CHART-198:
+    children: []
+    id: CHART-198
+    meta:
+      chartId: 198
+      height: 55
+      sliceName: Trend impianti dispositivi - Trend Storici
+      uuid: 504d6039-1fdb-4144-a652-f23a8c16f7ba
+      width: 8
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-fP5KjpfyVv7nmUZzDELz2
+    type: CHART
+  CHART-A19mjx2WNZtNES08p3mkJ:
+    children: []
+    id: CHART-A19mjx2WNZtNES08p3mkJ
+    meta:
+      chartId: 175
+      height: 50
+      sliceName: Impianti per anno
+      uuid: f9a305f7-65bd-42f9-a166-0125b2ef4b5b
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-fP5KjpfyVv7nmUZzDELz2
+    type: CHART
+  DASHBOARD_VERSION_KEY: v2
+  GRID_ID:
+    children:
+    - ROW-fP5KjpfyVv7nmUZzDELz2
+    id: GRID_ID
+    parents:
+    - ROOT_ID
+    type: GRID
+  HEADER_ID:
+    id: HEADER_ID
+    meta:
+      text: Reparto Aritmologia - Trend Dispositivi
+    type: HEADER
+  ROOT_ID:
+    children:
+    - GRID_ID
+    id: ROOT_ID
+    type: ROOT
+  ROW-fP5KjpfyVv7nmUZzDELz2:
+    children:
+    - CHART-A19mjx2WNZtNES08p3mkJ
+    - CHART-198
+    id: ROW-fP5KjpfyVv7nmUZzDELz2
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+metadata:
+  cross_filters_enabled: true
+  color_scheme_domain: []
+  shared_label_colors:
+  - SUM(n_eventi)
+  map_label_colors:
+    SUM(n_eventi): '#1f77b4'
+    ILR: '#1FA8C9'
+    PMK: '#454E7C'
+    ICD: '#5AC189'
+  label_colors: {}
+  chart_configuration:
+    '175':
+      id: 175
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 198
+    '198':
+      id: 198
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 175
+  global_chart_configuration:
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded: []
+    chartsInScope:
+    - 175
+    - 198
+  color_scheme: ''
+  refresh_frequency: 0
+  expanded_slices: {}
+  timed_refresh_immune_slices: []
+  default_filters: '{}'
+theme_uuid: null
+version: 1.0.0

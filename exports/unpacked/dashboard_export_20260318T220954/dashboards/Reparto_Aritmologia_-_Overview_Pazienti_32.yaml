@@ -1,0 +1,364 @@
+dashboard_title: Reparto Aritmologia - Overview Pazienti
+description: null
+css: ''
+slug: null
+certified_by: ''
+certification_details: ''
+published: false
+uuid: fbcf713b-ab09-4009-af79-25dbe5822a52
+position:
+  CHART-0tQtAPbzixl9Gn66m4vq4:
+    children: []
+    id: CHART-0tQtAPbzixl9Gn66m4vq4
+    meta:
+      chartId: 188
+      height: 50
+      sliceName: Pazienti per gruppo nazionalita
+      uuid: 8ba5a313-8cf2-4017-9a70-cc41e3e0502d
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-hZBT_3jAIDXPdXicBoINz
+    type: CHART
+  CHART-9UJDLTxQdzZtaWmGTtk8f:
+    children: []
+    id: CHART-9UJDLTxQdzZtaWmGTtk8f
+    meta:
+      chartId: 183
+      height: 50
+      sliceName: Distribuzione per fascia eta - Overview Reparto
+      uuid: b8450ae3-a3a3-494e-93cb-7f574c572c97
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-R9k58uPkiAENfRBFelvOb
+    type: CHART
+  CHART-9VEa3FVPUaenpD3Cc6RVo:
+    children: []
+    id: CHART-9VEa3FVPUaenpD3Cc6RVo
+    meta:
+      chartId: 189
+      height: 50
+      sliceName: Italiani per macro-area
+      uuid: 11cf0695-853c-4c40-a315-782b35c0843a
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-hZBT_3jAIDXPdXicBoINz
+    type: CHART
+  CHART-GpZ8268p5M_jMZwjFv_lK:
+    children: []
+    id: CHART-GpZ8268p5M_jMZwjFv_lK
+    meta:
+      chartId: 186
+      height: 50
+      sliceName: Nuovi pazienti  per anno - Overview Reparto
+      uuid: 3b90ab8a-2b8d-46db-833f-0b4b68b40ad9
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-ib-33nFNoqmAHnU-F24VQ
+    type: CHART
+  CHART-TSZEz9K1ZEzyrXC8Z2vwQ:
+    children: []
+    id: CHART-TSZEz9K1ZEzyrXC8Z2vwQ
+    meta:
+      chartId: 191
+      height: 50
+      sliceName: Italiani per provincia - Popolazione Pazienti
+      uuid: 07a9d20d-054c-4013-9ac3-afebe273a91d
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-jv8GGRugRf89Vy-_99UxK
+    type: CHART
+  CHART-_t0XYyQgSChAq-sYLrX1X:
+    children: []
+    id: CHART-_t0XYyQgSChAq-sYLrX1X
+    meta:
+      chartId: 190
+      height: 50
+      sliceName: Italiani per regione - Popolazione Pazienti
+      uuid: b5984aa2-c7c8-4776-ba08-8254ca818477
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-jv8GGRugRf89Vy-_99UxK
+    type: CHART
+  CHART-b0nNolQHiqPXFxaflP9ej:
+    children: []
+    id: CHART-b0nNolQHiqPXFxaflP9ej
+    meta:
+      chartId: 184
+      height: 50
+      sliceName: Distribuzione per genere - Overview Reparto
+      uuid: 6bbc92e2-4b4e-4d8e-af71-dc03b3c797ba
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-R9k58uPkiAENfRBFelvOb
+    type: CHART
+  CHART-explore-263-1:
+    children: []
+    id: CHART-explore-263-1
+    meta:
+      chartId: 263
+      height: 50
+      sliceName: Totale Pazienti
+      uuid: 5389e519-dd84-46c3-8acb-e4b549a691b0
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-R9k58uPkiAENfRBFelvOb
+    type: CHART
+  DASHBOARD_VERSION_KEY: v2
+  GRID_ID:
+    children:
+    - ROW-R9k58uPkiAENfRBFelvOb
+    - ROW-hZBT_3jAIDXPdXicBoINz
+    - ROW-jv8GGRugRf89Vy-_99UxK
+    id: GRID_ID
+    parents:
+    - ROOT_ID
+    type: GRID
+  HEADER_ID:
+    id: HEADER_ID
+    meta:
+      text: Reparto Aritmologia - Overview Pazienti
+    type: HEADER
+  ROOT_ID:
+    children:
+    - GRID_ID
+    id: ROOT_ID
+    type: ROOT
+  ROW-R9k58uPkiAENfRBFelvOb:
+    children:
+    - CHART-explore-263-1
+    - CHART-b0nNolQHiqPXFxaflP9ej
+    - CHART-9UJDLTxQdzZtaWmGTtk8f
+    id: ROW-R9k58uPkiAENfRBFelvOb
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-hZBT_3jAIDXPdXicBoINz:
+    children:
+    - CHART-GpZ8268p5M_jMZwjFv_lK
+    - CHART-0tQtAPbzixl9Gn66m4vq4
+    - CHART-9VEa3FVPUaenpD3Cc6RVo
+    id: ROW-hZBT_3jAIDXPdXicBoINz
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-jv8GGRugRf89Vy-_99UxK:
+    children:
+    - CHART-_t0XYyQgSChAq-sYLrX1X
+    - CHART-TSZEz9K1ZEzyrXC8Z2vwQ
+    id: ROW-jv8GGRugRf89Vy-_99UxK
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+metadata:
+  color_scheme_domain: []
+  shared_label_colors:
+  - Non classificato
+  map_label_colors:
+    Italia: '#1FA8C9'
+    Non classificato: '#454E7C'
+    Estero: '#5AC189'
+    '> 75': '#1FA8C9'
+    60-75: '#454E7C'
+    40-60: '#5AC189'
+    < 40: '#FF7F44'
+    Sconosciuta: '#666666'
+    M: '#1FA8C9'
+    F: '#454E7C'
+    ? ''
+    : '#5AC189'
+    Nord: '#1FA8C9'
+    Sud: '#454E7C'
+    Centro: '#5AC189'
+    Isole: '#FF7F44'
+    Count(*): '#1FA8C9'
+  label_colors: {}
+  chart_configuration:
+    '183':
+      id: 183
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 184
+        - 186
+        - 188
+        - 189
+        - 190
+        - 191
+        - 263
+    '184':
+      id: 184
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 183
+        - 186
+        - 188
+        - 189
+        - 190
+        - 191
+        - 263
+    '186':
+      id: 186
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 183
+        - 184
+        - 188
+        - 189
+        - 190
+        - 191
+        - 263
+    '188':
+      id: 188
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 183
+        - 184
+        - 186
+        - 189
+        - 190
+        - 191
+        - 263
+    '189':
+      id: 189
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 183
+        - 184
+        - 186
+        - 188
+        - 190
+        - 191
+        - 263
+    '190':
+      id: 190
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 183
+        - 184
+        - 186
+        - 188
+        - 189
+        - 191
+        - 263
+    '191':
+      id: 191
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 183
+        - 184
+        - 186
+        - 188
+        - 189
+        - 190
+        - 263
+  global_chart_configuration:
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded: []
+    chartsInScope:
+    - 183
+    - 184
+    - 186
+    - 188
+    - 189
+    - 190
+    - 191
+    - 263
+  color_scheme: ''
+  refresh_frequency: 0
+  expanded_slices: {}
+  timed_refresh_immune_slices: []
+  cross_filters_enabled: true
+  default_filters: '{}'
+  native_filter_configuration:
+  - id: NATIVE_FILTER-DwtM5V3WGhyfIscUzZkrw
+    controlValues:
+      enableEmptyFilter: false
+      defaultToFirstItem: false
+      creatable: true
+      multiSelect: true
+      searchAllOptions: false
+      inverseSelection: false
+    name: Con Ablazione
+    filterType: filter_select
+    targets:
+    - column:
+        name: ha_ablazione
+      datasetUuid: c8ac9fa0-18d1-4def-a434-462355e8aac3
+    defaultDataMask:
+      extraFormData: {}
+      filterState: {}
+      ownState: {}
+    cascadeParentIds: []
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded: []
+    type: NATIVE_FILTER
+    description: ''
+    chartsInScope:
+    - 263
+    tabsInScope: []
+  - id: NATIVE_FILTER-B592p824a4GIlFxuOFjIU
+    controlValues:
+      enableEmptyFilter: false
+      defaultToFirstItem: false
+      creatable: true
+      multiSelect: true
+      searchAllOptions: false
+      inverseSelection: false
+    name: Con dispositivo attivo
+    filterType: filter_select
+    targets:
+    - column:
+        name: ha_dispositivo_attivo
+      datasetUuid: c8ac9fa0-18d1-4def-a434-462355e8aac3
+    defaultDataMask:
+      extraFormData: {}
+      filterState: {}
+      ownState: {}
+    cascadeParentIds: []
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded: []
+    type: NATIVE_FILTER
+    description: ''
+    chartsInScope:
+    - 263
+    tabsInScope: []
+theme_uuid: null
+version: 1.0.0

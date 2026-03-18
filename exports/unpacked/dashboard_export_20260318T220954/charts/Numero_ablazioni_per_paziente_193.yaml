@@ -1,0 +1,63 @@
+slice_name: Numero ablazioni per paziente
+description: null
+certified_by: null
+certification_details: null
+viz_type: pie
+params:
+  datasource: 29__table
+  viz_type: pie
+  slice_id: 193
+  groupby:
+  - bucket_n_ablazioni
+  metric: count
+  adhoc_filters:
+  - clause: WHERE
+    comparator: No filter
+    datasourceWarning: false
+    expressionType: SIMPLE
+    filterOptionName: filter_kac1igjdq1_m3ra4gv09
+    isExtra: false
+    isNew: false
+    operator: TEMPORAL_RANGE
+    sqlExpression: null
+    subject: anno_ultima_procedura
+  - clause: WHERE
+    comparator: '0'
+    datasourceWarning: false
+    expressionType: SIMPLE
+    filterOptionName: filter_fjgm2ji0eyb_fqnrhu4fjuc
+    isExtra: false
+    isNew: false
+    operator: '>'
+    operatorId: GREATER_THAN
+    sqlExpression: null
+    subject: bucket_n_ablazioni
+  row_limit: 100
+  sort_by_metric: true
+  color_scheme: supersetColors
+  show_labels_threshold: 5
+  roseType: radius
+  show_legend: true
+  legendType: plain
+  legendOrientation: left
+  legendMargin: ''
+  label_type: key_value_percent
+  number_format: SMART_NUMBER
+  date_format: smart_date
+  show_labels: true
+  labels_outside: true
+  label_line: true
+  show_total: true
+  outerRadius: 80
+  donut: true
+  innerRadius: 35
+  extra_form_data: {}
+  dashboards:
+  - 21
+query_context: '{"datasource":{"id":29,"type":"table"},"force":false,"queries":[{"filters":[{"col":"anno_ultima_procedura","op":"TEMPORAL_RANGE","val":"No
+  filter"},{"col":"bucket_n_ablazioni","op":">","val":"0"}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":["bucket_n_ablazioni"],"metrics":["count"],"orderby":[["count",false]],"annotation_layers":[],"row_limit":100,"series_limit":0,"group_others_when_limit_reached":false,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{},"post_processing":[{"operation":"contribution","options":{"columns":["count"],"rename_columns":["count__contribution"]}}]}],"form_data":{"datasource":"29__table","viz_type":"pie","slice_id":193,"groupby":["bucket_n_ablazioni"],"metric":"count","adhoc_filters":[{"clause":"WHERE","comparator":"No
+  filter","datasourceWarning":false,"expressionType":"SIMPLE","filterOptionName":"filter_kac1igjdq1_m3ra4gv09","isExtra":false,"isNew":false,"operator":"TEMPORAL_RANGE","sqlExpression":null,"subject":"anno_ultima_procedura"},{"clause":"WHERE","comparator":"0","datasourceWarning":false,"expressionType":"SIMPLE","filterOptionName":"filter_fjgm2ji0eyb_fqnrhu4fjuc","isExtra":false,"isNew":false,"operator":">","operatorId":"GREATER_THAN","sqlExpression":null,"subject":"bucket_n_ablazioni"}],"row_limit":100,"sort_by_metric":true,"color_scheme":"supersetColors","show_labels_threshold":5,"roseType":"radius","show_legend":true,"legendType":"plain","legendOrientation":"left","legendMargin":"","label_type":"key_value_percent","number_format":"SMART_NUMBER","date_format":"smart_date","show_labels":true,"labels_outside":true,"label_line":true,"show_total":true,"outerRadius":80,"donut":true,"innerRadius":35,"extra_form_data":{},"dashboards":[21],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 07f120c8-d788-4783-817d-db5d340c5793
+version: 1.0.0
+dataset_uuid: c8ac9fa0-18d1-4def-a434-462355e8aac3

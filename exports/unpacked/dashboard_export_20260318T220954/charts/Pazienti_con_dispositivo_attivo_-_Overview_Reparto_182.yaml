@@ -1,0 +1,42 @@
+slice_name: Pazienti con dispositivo attivo - Overview Reparto
+description: null
+certified_by: null
+certification_details: null
+viz_type: big_number_total
+params:
+  datasource: 29__table
+  viz_type: big_number_total
+  slice_id: 182
+  metric:
+    expressionType: SQL
+    hasCustomLabel: false
+    label: Pazienti con dispositivo attivo
+    optionName: metric_mart_paziente_superset_pazienti_con_dispositivo_attivo
+    sqlExpression: SUM(CASE WHEN ha_dispositivo_attivo THEN 1 ELSE 0 END)
+  adhoc_filters:
+  - clause: WHERE
+    comparator: No filter
+    expressionType: SIMPLE
+    operator: TEMPORAL_RANGE
+    subject: anno_ultima_procedura
+  header_font_size: 0.4
+  subtitle: Con dispositivo attivo
+  subtitle_font_size: 0.125
+  y_axis_format: SMART_NUMBER
+  time_format: smart_date
+  conditional_formatting: []
+  extra_form_data: {}
+  dashboards:
+  - 21
+query_context: '{"datasource":{"id":29,"type":"table"},"force":false,"queries":[{"filters":[{"col":"anno_ultima_procedura","op":"TEMPORAL_RANGE","val":"No
+  filter"}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":[],"metrics":[{"expressionType":"SQL","hasCustomLabel":false,"label":"Pazienti
+  con dispositivo attivo","optionName":"metric_mart_paziente_superset_pazienti_con_dispositivo_attivo","sqlExpression":"SUM(CASE
+  WHEN ha_dispositivo_attivo THEN 1 ELSE 0 END)"}],"annotation_layers":[],"series_limit":0,"group_others_when_limit_reached":false,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{}}],"form_data":{"datasource":"29__table","viz_type":"big_number_total","slice_id":182,"metric":{"expressionType":"SQL","hasCustomLabel":false,"label":"Pazienti
+  con dispositivo attivo","optionName":"metric_mart_paziente_superset_pazienti_con_dispositivo_attivo","sqlExpression":"SUM(CASE
+  WHEN ha_dispositivo_attivo THEN 1 ELSE 0 END)"},"adhoc_filters":[{"clause":"WHERE","comparator":"No
+  filter","expressionType":"SIMPLE","operator":"TEMPORAL_RANGE","subject":"anno_ultima_procedura"}],"header_font_size":0.4,"subtitle":"Con
+  dispositivo attivo","subtitle_font_size":0.125,"y_axis_format":"SMART_NUMBER","time_format":"smart_date","conditional_formatting":[],"extra_form_data":{},"dashboards":[21],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 3229b7f7-f692-4d9a-b705-20cbc3ad9391
+version: 1.0.0
+dataset_uuid: c8ac9fa0-18d1-4def-a434-462355e8aac3

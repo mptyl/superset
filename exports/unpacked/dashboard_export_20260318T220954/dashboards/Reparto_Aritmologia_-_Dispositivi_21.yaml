@@ -1,0 +1,217 @@
+dashboard_title: Reparto Aritmologia - Dispositivi
+description: null
+css: ''
+slug: null
+certified_by: ''
+certification_details: ''
+published: false
+uuid: 361e0df8-a5ab-4ec2-9d27-041f1892a9f0
+position:
+  CHART-Gn748KJrVTelKF5dpz_J4:
+    children: []
+    id: CHART-Gn748KJrVTelKF5dpz_J4
+    meta:
+      chartId: 182
+      height: 50
+      sliceName: Pazienti con dispositivo attivo - Overview Reparto
+      uuid: 3229b7f7-f692-4d9a-b705-20cbc3ad9391
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-1
+    type: CHART
+  CHART-RRnTLaqEk6NCzkDyMzlGC:
+    children: []
+    id: CHART-RRnTLaqEk6NCzkDyMzlGC
+    meta:
+      chartId: 178
+      height: 50
+      sliceName: "Numero dispositivi per fascia et\xE0"
+      uuid: 632a32dc-ef82-4b3c-90e2-b778aa6825de
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-2O36AC3h60IY8KHKMYcyA
+    type: CHART
+  CHART-Uz4KyjwUTxfG4rYZzv7Dg:
+    children: []
+    id: CHART-Uz4KyjwUTxfG4rYZzv7Dg
+    meta:
+      chartId: 172
+      height: 50
+      sliceName: Tipo dispositivo prevalente
+      uuid: f003d8a6-3f7b-4933-97fa-5e92759a6b47
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-0mJj7XcEliOP0xKLV9VGf
+    type: CHART
+  CHART-s4l_7JzxCTx641FZBOrHN:
+    children: []
+    id: CHART-s4l_7JzxCTx641FZBOrHN
+    meta:
+      chartId: 173
+      height: 50
+      sliceName: Marca ultimo ICD - Dispositivi
+      uuid: 039e0b0d-9689-4528-af05-3ba976bf3323
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-2O36AC3h60IY8KHKMYcyA
+    type: CHART
+  CHART-yqykrsMnaQjrQ6TWXS83h:
+    children: []
+    id: CHART-yqykrsMnaQjrQ6TWXS83h
+    meta:
+      chartId: 179
+      height: 50
+      sliceName: Marca ultimo PMK - Dispositivi
+      uuid: f312d5c5-1eab-44b4-b424-8b4299cd74d3
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-2O36AC3h60IY8KHKMYcyA
+    type: CHART
+  DASHBOARD_VERSION_KEY: v2
+  GRID_ID:
+    children:
+    - ROW-1
+    - ROW-2O36AC3h60IY8KHKMYcyA
+    id: GRID_ID
+    parents:
+    - ROOT_ID
+    type: GRID
+  HEADER_ID:
+    id: HEADER_ID
+    meta:
+      text: Reparto Aritmologia - Dispositivi
+    type: HEADER
+  ROOT_ID:
+    children:
+    - GRID_ID
+    id: ROOT_ID
+    type: ROOT
+  ROW-1:
+    children:
+    - CHART-Gn748KJrVTelKF5dpz_J4
+    - CHART-Uz4KyjwUTxfG4rYZzv7Dg
+    - CHART-RRnTLaqEk6NCzkDyMzlGC
+    id: ROW-1
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-2O36AC3h60IY8KHKMYcyA:
+    children:
+    - CHART-s4l_7JzxCTx641FZBOrHN
+    - CHART-yqykrsMnaQjrQ6TWXS83h
+    id: ROW-2O36AC3h60IY8KHKMYcyA
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+metadata:
+  cross_filters_enabled: true
+  color_scheme_domain: []
+  shared_label_colors: []
+  map_label_colors:
+    ICD: '#1FA8C9'
+    PMK: '#454E7C'
+    ILR: '#5AC189'
+    Misto: '#FF7F44'
+  label_colors: {}
+  chart_configuration:
+    '172':
+      id: 172
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 173
+        - 178
+        - 179
+        - 182
+    '173':
+      id: 173
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 172
+        - 178
+        - 179
+        - 182
+    '178':
+      id: 178
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 172
+        - 173
+        - 179
+        - 182
+    '179':
+      id: 179
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 172
+        - 173
+        - 178
+        - 182
+  global_chart_configuration:
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded: []
+    chartsInScope:
+    - 172
+    - 173
+    - 178
+    - 179
+    - 182
+  native_filter_configuration:
+  - cascadeParentIds: []
+    controlValues:
+      creatable: true
+      defaultToFirstItem: false
+      enableEmptyFilter: false
+      inverseSelection: false
+      multiSelect: true
+      searchAllOptions: false
+    defaultDataMask:
+      extraFormData: {}
+      filterState: {}
+      ownState: {}
+    description: ''
+    filterType: filter_select
+    id: NATIVE_FILTER-WkSk_LYeXg589x2QqaZyj
+    name: "Fascia di et\xE0"
+    scope:
+      excluded: []
+      rootPath:
+      - ROOT_ID
+    targets:
+    - column:
+        name: fascia_eta
+      datasetUuid: c8ac9fa0-18d1-4def-a434-462355e8aac3
+    type: NATIVE_FILTER
+    chartsInScope:
+    - 193
+    - 194
+    - 195
+    tabsInScope: []
+  color_scheme: ''
+  refresh_frequency: 0
+  expanded_slices: {}
+  timed_refresh_immune_slices: []
+  default_filters: '{}'
+theme_uuid: null
+version: 1.0.0

@@ -1,0 +1,56 @@
+slice_name: Italiani per macro-area
+description: null
+certified_by: null
+certification_details: null
+viz_type: pie
+params:
+  datasource: 29__table
+  viz_type: pie
+  slice_id: 189
+  groupby:
+  - macro_area_residenza
+  metric: count
+  adhoc_filters:
+  - clause: WHERE
+    comparator: Italia
+    expressionType: SIMPLE
+    filterOptionName: filter_nazionalita_gruppo_==
+    isExtra: false
+    isNew: false
+    operator: ==
+    sqlExpression: null
+    subject: nazionalita_gruppo
+  - clause: WHERE
+    comparator: No filter
+    expressionType: SIMPLE
+    operator: TEMPORAL_RANGE
+    subject: anno_ultima_procedura
+  row_limit: 100
+  sort_by_metric: true
+  color_scheme: supersetColors
+  show_labels_threshold: '0'
+  roseType: radius
+  show_legend: true
+  legendType: plain
+  legendOrientation: left
+  label_type: key_value_percent
+  number_format: SMART_NUMBER
+  date_format: smart_date
+  show_labels: true
+  labels_outside: true
+  label_line: true
+  show_total: true
+  outerRadius: 80
+  donut: true
+  innerRadius: 30
+  extra_form_data: {}
+  dashboards:
+  - 23
+  - 20
+query_context: '{"datasource":{"id":29,"type":"table"},"force":false,"queries":[{"filters":[{"col":"nazionalita_gruppo","op":"==","val":"Italia"},{"col":"anno_ultima_procedura","op":"TEMPORAL_RANGE","val":"No
+  filter"}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":["macro_area_residenza"],"metrics":["count"],"orderby":[["count",false]],"annotation_layers":[],"row_limit":100,"series_limit":0,"group_others_when_limit_reached":false,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{},"post_processing":[{"operation":"contribution","options":{"columns":["count"],"rename_columns":["count__contribution"]}}]}],"form_data":{"datasource":"29__table","viz_type":"pie","slice_id":189,"groupby":["macro_area_residenza"],"metric":"count","adhoc_filters":[{"clause":"WHERE","comparator":"Italia","expressionType":"SIMPLE","filterOptionName":"filter_nazionalita_gruppo_==","isExtra":false,"isNew":false,"operator":"==","sqlExpression":null,"subject":"nazionalita_gruppo"},{"clause":"WHERE","comparator":"No
+  filter","expressionType":"SIMPLE","operator":"TEMPORAL_RANGE","subject":"anno_ultima_procedura"}],"row_limit":100,"sort_by_metric":true,"color_scheme":"supersetColors","show_labels_threshold":"0","roseType":"radius","show_legend":true,"legendType":"plain","legendOrientation":"left","label_type":"key_value_percent","number_format":"SMART_NUMBER","date_format":"smart_date","show_labels":true,"labels_outside":true,"label_line":true,"show_total":true,"outerRadius":80,"donut":true,"innerRadius":30,"extra_form_data":{},"dashboards":[23,20],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 11cf0695-853c-4c40-a315-782b35c0843a
+version: 1.0.0
+dataset_uuid: c8ac9fa0-18d1-4def-a434-462355e8aac3

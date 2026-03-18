@@ -1,0 +1,53 @@
+slice_name: Italiani per regione - Popolazione Pazienti
+description: null
+certified_by: null
+certification_details: null
+viz_type: table
+params:
+  datasource: 29__table
+  viz_type: table
+  slice_id: 190
+  query_mode: aggregate
+  groupby:
+  - regione_residenza
+  temporal_columns_lookup: {}
+  metrics:
+  - count
+  all_columns: []
+  percent_metrics: []
+  adhoc_filters:
+  - clause: WHERE
+    comparator: Italia
+    expressionType: SIMPLE
+    filterOptionName: filter_nazionalita_gruppo_==
+    isExtra: false
+    isNew: false
+    operator: ==
+    sqlExpression: null
+    subject: nazionalita_gruppo
+  - clause: WHERE
+    comparator: No filter
+    expressionType: SIMPLE
+    operator: TEMPORAL_RANGE
+    subject: anno_ultima_procedura
+  order_by_cols: []
+  server_page_length: 10
+  row_limit: 50
+  percent_metric_calculation: row_limit
+  table_timestamp_format: smart_date
+  allow_render_html: true
+  show_cell_bars: true
+  color_pn: true
+  comparison_color_scheme: Green
+  comparison_type: values
+  extra_form_data: {}
+  dashboards:
+  - 23
+  - 20
+query_context: '{"datasource":{"id":29,"type":"table"},"force":false,"queries":[{"filters":[{"col":"nazionalita_gruppo","op":"==","val":"Italia"},{"col":"anno_ultima_procedura","op":"TEMPORAL_RANGE","val":"No
+  filter"}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":["regione_residenza"],"metrics":["count"],"orderby":[["count",false]],"annotation_layers":[],"row_limit":50,"series_limit":0,"group_others_when_limit_reached":false,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{},"post_processing":[],"time_offsets":[]}],"form_data":{"datasource":"29__table","viz_type":"table","slice_id":190,"query_mode":"aggregate","groupby":["regione_residenza"],"temporal_columns_lookup":{},"metrics":["count"],"all_columns":[],"percent_metrics":[],"adhoc_filters":[{"clause":"WHERE","comparator":"Italia","expressionType":"SIMPLE","filterOptionName":"filter_nazionalita_gruppo_==","isExtra":false,"isNew":false,"operator":"==","sqlExpression":null,"subject":"nazionalita_gruppo"},{"clause":"WHERE","comparator":"No
+  filter","expressionType":"SIMPLE","operator":"TEMPORAL_RANGE","subject":"anno_ultima_procedura"}],"order_by_cols":[],"server_page_length":10,"row_limit":50,"percent_metric_calculation":"row_limit","table_timestamp_format":"smart_date","allow_render_html":true,"show_cell_bars":true,"color_pn":true,"comparison_color_scheme":"Green","comparison_type":"values","extra_form_data":{},"dashboards":[23,20],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: b5984aa2-c7c8-4776-ba08-8254ca818477
+version: 1.0.0
+dataset_uuid: c8ac9fa0-18d1-4def-a434-462355e8aac3

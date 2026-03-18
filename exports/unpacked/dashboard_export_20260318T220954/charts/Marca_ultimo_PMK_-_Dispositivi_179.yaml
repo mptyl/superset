@@ -1,0 +1,53 @@
+slice_name: Marca ultimo PMK - Dispositivi
+description: null
+certified_by: null
+certification_details: null
+viz_type: table
+params:
+  datasource: 29__table
+  viz_type: table
+  slice_id: 179
+  query_mode: aggregate
+  groupby:
+  - descr_marca_ultimo_pmk
+  temporal_columns_lookup: {}
+  metrics:
+  - count
+  all_columns: []
+  percent_metrics: []
+  adhoc_filters:
+  - clause: WHERE
+    comparator: true
+    expressionType: SIMPLE
+    filterOptionName: filter_ha_dispositivo_attivo_==
+    isExtra: false
+    isNew: false
+    operator: ==
+    sqlExpression: null
+    subject: ha_dispositivo_attivo
+  - clause: WHERE
+    subject: anno_ultima_procedura
+    operator: TEMPORAL_RANGE
+    comparator: No filter
+    expressionType: SIMPLE
+  order_by_cols: []
+  server_page_length: 10
+  row_limit: 50
+  percent_metric_calculation: row_limit
+  table_timestamp_format: smart_date
+  allow_render_html: true
+  show_cell_bars: true
+  color_pn: true
+  comparison_color_scheme: Green
+  comparison_type: values
+  extra_form_data: {}
+  dashboards:
+  - 18
+  - 23
+query_context: '{"datasource":{"id":29,"type":"table"},"force":false,"queries":[{"filters":[{"col":"ha_dispositivo_attivo","op":"==","val":true},{"col":"anno_ultima_procedura","op":"TEMPORAL_RANGE","val":"No
+  filter"}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":["descr_marca_ultimo_pmk"],"metrics":["count"],"orderby":[["count",false]],"annotation_layers":[],"row_limit":50,"series_limit":0,"group_others_when_limit_reached":false,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{},"post_processing":[],"time_offsets":[]}],"form_data":{"datasource":"29__table","viz_type":"table","slice_id":179,"query_mode":"aggregate","groupby":["descr_marca_ultimo_pmk"],"temporal_columns_lookup":{},"metrics":["count"],"all_columns":[],"percent_metrics":[],"adhoc_filters":[{"clause":"WHERE","comparator":true,"expressionType":"SIMPLE","filterOptionName":"filter_ha_dispositivo_attivo_==","isExtra":false,"isNew":false,"operator":"==","sqlExpression":null,"subject":"ha_dispositivo_attivo"},{"clause":"WHERE","subject":"anno_ultima_procedura","operator":"TEMPORAL_RANGE","comparator":"No
+  filter","expressionType":"SIMPLE"}],"order_by_cols":[],"server_page_length":10,"row_limit":50,"percent_metric_calculation":"row_limit","table_timestamp_format":"smart_date","allow_render_html":true,"show_cell_bars":true,"color_pn":true,"comparison_color_scheme":"Green","comparison_type":"values","extra_form_data":{},"dashboards":[18,23],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: f312d5c5-1eab-44b4-b424-8b4299cd74d3
+version: 1.0.0
+dataset_uuid: c8ac9fa0-18d1-4def-a434-462355e8aac3

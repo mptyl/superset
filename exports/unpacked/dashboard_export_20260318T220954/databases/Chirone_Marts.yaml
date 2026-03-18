@@ -1,0 +1,15 @@
+database_name: Chirone Marts
+sqlalchemy_uri: postgresql://postgres:XXXXXXXXXX@host.docker.internal:5437/postgres
+cache_timeout: null
+expose_in_sqllab: true
+allow_run_async: false
+allow_ctas: false
+allow_cvas: false
+allow_dml: false
+allow_file_upload: false
+extra:
+  default_schema: datawarehouse_marts
+  schemas_allowed_for_file_upload: []
+impersonate_user: false
+uuid: ce0083bd-d9b9-49cd-ae3f-c3df9e4237a9
+version: 1.0.0

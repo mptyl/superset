@@ -1,0 +1,1122 @@
+dashboard_title: Reparto Aritmologia - Overview
+description: null
+css: ''
+slug: null
+certified_by: ''
+certification_details: ''
+published: false
+uuid: a89c19f4-f59a-42f9-b14b-3f0564574656
+position:
+  CHART-0oCqCksXYGB1oHLZfX3AO:
+    children: []
+    id: CHART-0oCqCksXYGB1oHLZfX3AO
+    meta:
+      chartId: 172
+      height: 50
+      sliceName: Tipo dispositivo prevalente
+      uuid: f003d8a6-3f7b-4933-97fa-5e92759a6b47
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-pV4Tv62fAiZt7YS35rQ6b
+    - TAB-2SeUjatxEZa-3rKqyOhOf
+    - ROW-7Vcw14TKiMWKnWy5Xfkcd
+    type: CHART
+  CHART-2dK2xSw9GQyV0AGJ5mjWz:
+    children: []
+    id: CHART-2dK2xSw9GQyV0AGJ5mjWz
+    meta:
+      chartId: 197
+      height: 50
+      sliceName: Trend procedure per famiglia - Trend Storici
+      uuid: 840216d7-cea6-4cf9-a079-97808049a5dd
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-pV4Tv62fAiZt7YS35rQ6b
+    - TAB-j9hj2_QrWoA5-ewR06toC
+    - ROW-hLBPVHlJ_GIVXmVr1OD31
+    type: CHART
+  CHART-5a3LsRRdaDtOPXB733g3q:
+    children: []
+    id: CHART-5a3LsRRdaDtOPXB733g3q
+    meta:
+      chartId: 195
+      height: 50
+      sliceName: 'Pazienti con complicanze per fascia eta '
+      uuid: ea6cc24a-68c5-4acd-8432-acc856a0baa0
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-pV4Tv62fAiZt7YS35rQ6b
+    - TAB-AnfwFp0CcIRmeQSxwsCgL
+    - ROW-GV7aAgpMN8AhcGfNNKQve
+    type: CHART
+  CHART-AUPe4xovMWWez_ZICmY8n:
+    children: []
+    id: CHART-AUPe4xovMWWez_ZICmY8n
+    meta:
+      chartId: 184
+      height: 50
+      sliceName: Distribuzione per genere - Overview Reparto
+      uuid: 6bbc92e2-4b4e-4d8e-af71-dc03b3c797ba
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-pV4Tv62fAiZt7YS35rQ6b
+    - TAB-ojfonb7MNF2zZwXkpIB9m
+    - ROW-1wacOVmadOGf2pb9u5-Xn
+    type: CHART
+  CHART-COf2byTgGz_GpgGAKkfk0:
+    children: []
+    id: CHART-COf2byTgGz_GpgGAKkfk0
+    meta:
+      chartId: 193
+      height: 50
+      sliceName: Numero ablazioni per paziente
+      uuid: 07f120c8-d788-4783-817d-db5d340c5793
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-pV4Tv62fAiZt7YS35rQ6b
+    - TAB-AnfwFp0CcIRmeQSxwsCgL
+    - ROW-GV7aAgpMN8AhcGfNNKQve
+    type: CHART
+  CHART-D1eL3TgL5pYqS00GUDGOb:
+    children: []
+    id: CHART-D1eL3TgL5pYqS00GUDGOb
+    meta:
+      chartId: 174
+      height: 50
+      sliceName: Trend annuale ablazioni
+      uuid: 9d04bfd4-ea29-4cca-9744-a434d361290f
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-pV4Tv62fAiZt7YS35rQ6b
+    - TAB-j9hj2_QrWoA5-ewR06toC
+    - ROW-hLBPVHlJ_GIVXmVr1OD31
+    type: CHART
+  CHART-FvBUSfHy81hHBTA38ZDBK:
+    children: []
+    id: CHART-FvBUSfHy81hHBTA38ZDBK
+    meta:
+      chartId: 179
+      height: 50
+      sliceName: Marca ultimo PMK - Dispositivi
+      uuid: f312d5c5-1eab-44b4-b424-8b4299cd74d3
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-pV4Tv62fAiZt7YS35rQ6b
+    - TAB-2SeUjatxEZa-3rKqyOhOf
+    - ROW-_LwlK5qEpx_2eJS1uivLM
+    type: CHART
+  CHART-GdqyDY8p_QJsyPxWEVGeW:
+    children: []
+    id: CHART-GdqyDY8p_QJsyPxWEVGeW
+    meta:
+      chartId: 189
+      height: 50
+      sliceName: Italiani per macro-area
+      uuid: 11cf0695-853c-4c40-a315-782b35c0843a
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-pV4Tv62fAiZt7YS35rQ6b
+    - TAB-ojfonb7MNF2zZwXkpIB9m
+    - ROW-UER9sJQHrctvQ6ZNi-AHD
+    type: CHART
+  CHART-JucSYbAI-fao3VGp1h4jE:
+    children: []
+    id: CHART-JucSYbAI-fao3VGp1h4jE
+    meta:
+      chartId: 190
+      height: 50
+      sliceName: Italiani per regione - Popolazione Pazienti
+      uuid: b5984aa2-c7c8-4776-ba08-8254ca818477
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-pV4Tv62fAiZt7YS35rQ6b
+    - TAB-ojfonb7MNF2zZwXkpIB9m
+    - ROW-sw4fKoxbwpZlW7VCAB7z1
+    type: CHART
+  CHART-KshhqqHcnd_ARK-E-Ga-U:
+    children: []
+    id: CHART-KshhqqHcnd_ARK-E-Ga-U
+    meta:
+      chartId: 263
+      height: 50
+      sliceName: Totale Pazienti
+      uuid: 5389e519-dd84-46c3-8acb-e4b549a691b0
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-pV4Tv62fAiZt7YS35rQ6b
+    - TAB-ojfonb7MNF2zZwXkpIB9m
+    - ROW-1wacOVmadOGf2pb9u5-Xn
+    type: CHART
+  CHART-OI9AINjF8UYYnUwdyzz90:
+    children: []
+    id: CHART-OI9AINjF8UYYnUwdyzz90
+    meta:
+      chartId: 182
+      height: 50
+      sliceName: Pazienti con dispositivo attivo - Overview Reparto
+      uuid: 3229b7f7-f692-4d9a-b705-20cbc3ad9391
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-pV4Tv62fAiZt7YS35rQ6b
+    - TAB-2SeUjatxEZa-3rKqyOhOf
+    - ROW-7Vcw14TKiMWKnWy5Xfkcd
+    type: CHART
+  CHART-SmazxkzOx39ldHd1l_rGW:
+    children: []
+    id: CHART-SmazxkzOx39ldHd1l_rGW
+    meta:
+      chartId: 183
+      height: 50
+      sliceName: Distribuzione per fascia eta - Overview Reparto
+      uuid: b8450ae3-a3a3-494e-93cb-7f574c572c97
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-pV4Tv62fAiZt7YS35rQ6b
+    - TAB-ojfonb7MNF2zZwXkpIB9m
+    - ROW-1wacOVmadOGf2pb9u5-Xn
+    type: CHART
+  CHART-Uy2q1g770jdWZ1jXbPb6q:
+    children: []
+    id: CHART-Uy2q1g770jdWZ1jXbPb6q
+    meta:
+      chartId: 181
+      height: 50
+      sliceName: Pazienti con ablazione - Overview Reparto
+      uuid: 171f48d6-e0d9-4878-b08d-1f8cb6bc86bd
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-pV4Tv62fAiZt7YS35rQ6b
+    - TAB-AnfwFp0CcIRmeQSxwsCgL
+    - ROW-vasI4MN4dVqjOY_RnGRPJ
+    type: CHART
+  CHART-aLzfHwESVQqAw0T27Iwsm:
+    children: []
+    id: CHART-aLzfHwESVQqAw0T27Iwsm
+    meta:
+      chartId: 173
+      height: 50
+      sliceName: Marca ultimo ICD - Dispositivi
+      uuid: 039e0b0d-9689-4528-af05-3ba976bf3323
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-pV4Tv62fAiZt7YS35rQ6b
+    - TAB-2SeUjatxEZa-3rKqyOhOf
+    - ROW-_LwlK5qEpx_2eJS1uivLM
+    type: CHART
+  CHART-c5YWjqIsHstq6nytRi2sd:
+    children: []
+    id: CHART-c5YWjqIsHstq6nytRi2sd
+    meta:
+      chartId: 191
+      height: 50
+      sliceName: Italiani per provincia - Popolazione Pazienti
+      uuid: 07a9d20d-054c-4013-9ac3-afebe273a91d
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-pV4Tv62fAiZt7YS35rQ6b
+    - TAB-ojfonb7MNF2zZwXkpIB9m
+    - ROW-sw4fKoxbwpZlW7VCAB7z1
+    type: CHART
+  CHART-cyxcUYtuglzIjY59bt0nE:
+    children: []
+    id: CHART-cyxcUYtuglzIjY59bt0nE
+    meta:
+      chartId: 186
+      height: 50
+      sliceName: Nuovi pazienti  per anno - Overview Reparto
+      uuid: 3b90ab8a-2b8d-46db-833f-0b4b68b40ad9
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-pV4Tv62fAiZt7YS35rQ6b
+    - TAB-ojfonb7MNF2zZwXkpIB9m
+    - ROW-UER9sJQHrctvQ6ZNi-AHD
+    type: CHART
+  CHART-e5inmaEu80ZU7fga8t7G7:
+    children: []
+    id: CHART-e5inmaEu80ZU7fga8t7G7
+    meta:
+      chartId: 164
+      height: 50
+      sliceName: Profilo clinico
+      uuid: 491e89e6-7824-4095-ae49-60250fa8e1ec
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-pV4Tv62fAiZt7YS35rQ6b
+    - TAB-AnfwFp0CcIRmeQSxwsCgL
+    - ROW-vasI4MN4dVqjOY_RnGRPJ
+    type: CHART
+  CHART-hzPeU-T7bIfll0pCtNYbn:
+    children: []
+    id: CHART-hzPeU-T7bIfll0pCtNYbn
+    meta:
+      chartId: 198
+      height: 50
+      sliceName: Trend impianti dispositivi - Trend Storici
+      uuid: 504d6039-1fdb-4144-a652-f23a8c16f7ba
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-pV4Tv62fAiZt7YS35rQ6b
+    - TAB-j9hj2_QrWoA5-ewR06toC
+    - ROW-hLBPVHlJ_GIVXmVr1OD31
+    type: CHART
+  CHART-i92rg-bMmUw55CNVcLvkG:
+    children: []
+    id: CHART-i92rg-bMmUw55CNVcLvkG
+    meta:
+      chartId: 188
+      height: 50
+      sliceName: Pazienti per gruppo nazionalita
+      uuid: 8ba5a313-8cf2-4017-9a70-cc41e3e0502d
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-pV4Tv62fAiZt7YS35rQ6b
+    - TAB-ojfonb7MNF2zZwXkpIB9m
+    - ROW-UER9sJQHrctvQ6ZNi-AHD
+    type: CHART
+  CHART-lohqqKnRziLzlLGMamjDt:
+    children: []
+    id: CHART-lohqqKnRziLzlLGMamjDt
+    meta:
+      chartId: 194
+      height: 50
+      sliceName: Numero procedure x paziente
+      uuid: e2bcb85c-87db-4e53-bad1-fc361b8f2397
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-pV4Tv62fAiZt7YS35rQ6b
+    - TAB-AnfwFp0CcIRmeQSxwsCgL
+    - ROW-vasI4MN4dVqjOY_RnGRPJ
+    type: CHART
+  CHART-xLDVVEr9Qq57fJLILzW1K:
+    children: []
+    id: CHART-xLDVVEr9Qq57fJLILzW1K
+    meta:
+      chartId: 178
+      height: 50
+      sliceName: "Numero dispositivi per fascia et\xE0"
+      uuid: 632a32dc-ef82-4b3c-90e2-b778aa6825de
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-pV4Tv62fAiZt7YS35rQ6b
+    - TAB-2SeUjatxEZa-3rKqyOhOf
+    - ROW-7Vcw14TKiMWKnWy5Xfkcd
+    type: CHART
+  DASHBOARD_VERSION_KEY: v2
+  GRID_ID:
+    children:
+    - TABS-pV4Tv62fAiZt7YS35rQ6b
+    id: GRID_ID
+    parents:
+    - ROOT_ID
+    type: GRID
+  HEADER_ID:
+    id: HEADER_ID
+    meta:
+      text: Reparto Aritmologia - Overview
+    type: HEADER
+  ROOT_ID:
+    children:
+    - GRID_ID
+    id: ROOT_ID
+    type: ROOT
+  ROW-1wacOVmadOGf2pb9u5-Xn:
+    children:
+    - CHART-KshhqqHcnd_ARK-E-Ga-U
+    - CHART-AUPe4xovMWWez_ZICmY8n
+    - CHART-SmazxkzOx39ldHd1l_rGW
+    id: ROW-1wacOVmadOGf2pb9u5-Xn
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-pV4Tv62fAiZt7YS35rQ6b
+    - TAB-ojfonb7MNF2zZwXkpIB9m
+    type: ROW
+  ROW-7Vcw14TKiMWKnWy5Xfkcd:
+    children:
+    - CHART-OI9AINjF8UYYnUwdyzz90
+    - CHART-0oCqCksXYGB1oHLZfX3AO
+    - CHART-xLDVVEr9Qq57fJLILzW1K
+    id: ROW-7Vcw14TKiMWKnWy5Xfkcd
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-pV4Tv62fAiZt7YS35rQ6b
+    - TAB-2SeUjatxEZa-3rKqyOhOf
+    type: ROW
+  ROW-GV7aAgpMN8AhcGfNNKQve:
+    children:
+    - CHART-COf2byTgGz_GpgGAKkfk0
+    - CHART-5a3LsRRdaDtOPXB733g3q
+    id: ROW-GV7aAgpMN8AhcGfNNKQve
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-pV4Tv62fAiZt7YS35rQ6b
+    - TAB-AnfwFp0CcIRmeQSxwsCgL
+    type: ROW
+  ROW-UER9sJQHrctvQ6ZNi-AHD:
+    children:
+    - CHART-cyxcUYtuglzIjY59bt0nE
+    - CHART-i92rg-bMmUw55CNVcLvkG
+    - CHART-GdqyDY8p_QJsyPxWEVGeW
+    id: ROW-UER9sJQHrctvQ6ZNi-AHD
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-pV4Tv62fAiZt7YS35rQ6b
+    - TAB-ojfonb7MNF2zZwXkpIB9m
+    type: ROW
+  ROW-_LwlK5qEpx_2eJS1uivLM:
+    children:
+    - CHART-FvBUSfHy81hHBTA38ZDBK
+    - CHART-aLzfHwESVQqAw0T27Iwsm
+    id: ROW-_LwlK5qEpx_2eJS1uivLM
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-pV4Tv62fAiZt7YS35rQ6b
+    - TAB-2SeUjatxEZa-3rKqyOhOf
+    type: ROW
+  ROW-hLBPVHlJ_GIVXmVr1OD31:
+    children:
+    - CHART-2dK2xSw9GQyV0AGJ5mjWz
+    - CHART-hzPeU-T7bIfll0pCtNYbn
+    id: ROW-hLBPVHlJ_GIVXmVr1OD31
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-pV4Tv62fAiZt7YS35rQ6b
+    - TAB-j9hj2_QrWoA5-ewR06toC
+    type: ROW
+  ROW-o9o9zemITMwuqUDRYKTtP:
+    children:
+    - CHART-D1eL3TgL5pYqS00GUDGOb
+    id: ROW-o9o9zemITMwuqUDRYKTtP
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-pV4Tv62fAiZt7YS35rQ6b
+    - TAB-j9hj2_QrWoA5-ewR06toC
+    type: ROW
+  ROW-sw4fKoxbwpZlW7VCAB7z1:
+    children:
+    - CHART-JucSYbAI-fao3VGp1h4jE
+    - CHART-c5YWjqIsHstq6nytRi2sd
+    id: ROW-sw4fKoxbwpZlW7VCAB7z1
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-pV4Tv62fAiZt7YS35rQ6b
+    - TAB-ojfonb7MNF2zZwXkpIB9m
+    type: ROW
+  ROW-vasI4MN4dVqjOY_RnGRPJ:
+    children:
+    - CHART-Uy2q1g770jdWZ1jXbPb6q
+    - CHART-e5inmaEu80ZU7fga8t7G7
+    - CHART-lohqqKnRziLzlLGMamjDt
+    id: ROW-vasI4MN4dVqjOY_RnGRPJ
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-pV4Tv62fAiZt7YS35rQ6b
+    - TAB-AnfwFp0CcIRmeQSxwsCgL
+    type: ROW
+  TAB-2SeUjatxEZa-3rKqyOhOf:
+    children:
+    - ROW-7Vcw14TKiMWKnWy5Xfkcd
+    - ROW-_LwlK5qEpx_2eJS1uivLM
+    id: TAB-2SeUjatxEZa-3rKqyOhOf
+    meta:
+      defaultText: Tab title
+      placeholder: Tab title
+      text: Dispositivi
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-pV4Tv62fAiZt7YS35rQ6b
+    type: TAB
+  TAB-AnfwFp0CcIRmeQSxwsCgL:
+    children:
+    - ROW-vasI4MN4dVqjOY_RnGRPJ
+    - ROW-GV7aAgpMN8AhcGfNNKQve
+    id: TAB-AnfwFp0CcIRmeQSxwsCgL
+    meta:
+      defaultText: Tab title
+      placeholder: Tab title
+      text: Procedure
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-pV4Tv62fAiZt7YS35rQ6b
+    type: TAB
+  TAB-j9hj2_QrWoA5-ewR06toC:
+    children:
+    - ROW-hLBPVHlJ_GIVXmVr1OD31
+    - ROW-o9o9zemITMwuqUDRYKTtP
+    id: TAB-j9hj2_QrWoA5-ewR06toC
+    meta:
+      defaultText: Tab title
+      placeholder: Tab title
+      text: Trend
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-pV4Tv62fAiZt7YS35rQ6b
+    type: TAB
+  TAB-ojfonb7MNF2zZwXkpIB9m:
+    children:
+    - ROW-1wacOVmadOGf2pb9u5-Xn
+    - ROW-UER9sJQHrctvQ6ZNi-AHD
+    - ROW-sw4fKoxbwpZlW7VCAB7z1
+    id: TAB-ojfonb7MNF2zZwXkpIB9m
+    meta:
+      defaultText: Tab title
+      placeholder: Tab title
+      text: Overview Pazienti
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - TABS-pV4Tv62fAiZt7YS35rQ6b
+    type: TAB
+  TABS-pV4Tv62fAiZt7YS35rQ6b:
+    children:
+    - TAB-ojfonb7MNF2zZwXkpIB9m
+    - TAB-AnfwFp0CcIRmeQSxwsCgL
+    - TAB-2SeUjatxEZa-3rKqyOhOf
+    - TAB-j9hj2_QrWoA5-ewR06toC
+    id: TABS-pV4Tv62fAiZt7YS35rQ6b
+    meta: {}
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: TABS
+metadata:
+  chart_configuration:
+    '164':
+      id: 164
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 172
+        - 173
+        - 174
+        - 178
+        - 179
+        - 181
+        - 182
+        - 183
+        - 184
+        - 186
+        - 188
+        - 189
+        - 190
+        - 191
+        - 193
+        - 194
+        - 195
+        - 197
+        - 198
+        - 263
+    '172':
+      id: 172
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 164
+        - 173
+        - 174
+        - 178
+        - 179
+        - 181
+        - 182
+        - 183
+        - 184
+        - 186
+        - 188
+        - 189
+        - 190
+        - 191
+        - 193
+        - 194
+        - 195
+        - 197
+        - 198
+        - 263
+    '173':
+      id: 173
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 164
+        - 172
+        - 174
+        - 178
+        - 179
+        - 181
+        - 182
+        - 183
+        - 184
+        - 186
+        - 188
+        - 189
+        - 190
+        - 191
+        - 193
+        - 194
+        - 195
+        - 197
+        - 198
+        - 263
+    '174':
+      id: 174
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 164
+        - 172
+        - 173
+        - 178
+        - 179
+        - 181
+        - 182
+        - 183
+        - 184
+        - 186
+        - 188
+        - 189
+        - 190
+        - 191
+        - 193
+        - 194
+        - 195
+        - 197
+        - 198
+        - 263
+    '178':
+      id: 178
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 164
+        - 172
+        - 173
+        - 174
+        - 179
+        - 181
+        - 182
+        - 183
+        - 184
+        - 186
+        - 188
+        - 189
+        - 190
+        - 191
+        - 193
+        - 194
+        - 195
+        - 197
+        - 198
+        - 263
+    '179':
+      id: 179
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 164
+        - 172
+        - 173
+        - 174
+        - 178
+        - 181
+        - 182
+        - 183
+        - 184
+        - 186
+        - 188
+        - 189
+        - 190
+        - 191
+        - 193
+        - 194
+        - 195
+        - 197
+        - 198
+        - 263
+    '183':
+      id: 183
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 164
+        - 172
+        - 173
+        - 174
+        - 178
+        - 179
+        - 181
+        - 182
+        - 184
+        - 186
+        - 188
+        - 189
+        - 190
+        - 191
+        - 193
+        - 194
+        - 195
+        - 197
+        - 198
+        - 263
+    '184':
+      id: 184
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 164
+        - 172
+        - 173
+        - 174
+        - 178
+        - 179
+        - 181
+        - 182
+        - 183
+        - 186
+        - 188
+        - 189
+        - 190
+        - 191
+        - 193
+        - 194
+        - 195
+        - 197
+        - 198
+        - 263
+    '186':
+      id: 186
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 164
+        - 172
+        - 173
+        - 174
+        - 178
+        - 179
+        - 181
+        - 182
+        - 183
+        - 184
+        - 188
+        - 189
+        - 190
+        - 191
+        - 193
+        - 194
+        - 195
+        - 197
+        - 198
+        - 263
+    '188':
+      id: 188
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 164
+        - 172
+        - 173
+        - 174
+        - 178
+        - 179
+        - 181
+        - 182
+        - 183
+        - 184
+        - 186
+        - 189
+        - 190
+        - 191
+        - 193
+        - 194
+        - 195
+        - 197
+        - 198
+        - 263
+    '189':
+      id: 189
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 164
+        - 172
+        - 173
+        - 174
+        - 178
+        - 179
+        - 181
+        - 182
+        - 183
+        - 184
+        - 186
+        - 188
+        - 190
+        - 191
+        - 193
+        - 194
+        - 195
+        - 197
+        - 198
+        - 263
+    '190':
+      id: 190
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 164
+        - 172
+        - 173
+        - 174
+        - 178
+        - 179
+        - 181
+        - 182
+        - 183
+        - 184
+        - 186
+        - 188
+        - 189
+        - 191
+        - 193
+        - 194
+        - 195
+        - 197
+        - 198
+        - 263
+    '191':
+      id: 191
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 164
+        - 172
+        - 173
+        - 174
+        - 178
+        - 179
+        - 181
+        - 182
+        - 183
+        - 184
+        - 186
+        - 188
+        - 189
+        - 190
+        - 193
+        - 194
+        - 195
+        - 197
+        - 198
+        - 263
+    '193':
+      id: 193
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 164
+        - 172
+        - 173
+        - 174
+        - 178
+        - 179
+        - 181
+        - 182
+        - 183
+        - 184
+        - 186
+        - 188
+        - 189
+        - 190
+        - 191
+        - 194
+        - 195
+        - 197
+        - 198
+        - 263
+    '194':
+      id: 194
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 164
+        - 172
+        - 173
+        - 174
+        - 178
+        - 179
+        - 181
+        - 182
+        - 183
+        - 184
+        - 186
+        - 188
+        - 189
+        - 190
+        - 191
+        - 193
+        - 195
+        - 197
+        - 198
+        - 263
+    '195':
+      id: 195
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 164
+        - 172
+        - 173
+        - 174
+        - 178
+        - 179
+        - 181
+        - 182
+        - 183
+        - 184
+        - 186
+        - 188
+        - 189
+        - 190
+        - 191
+        - 193
+        - 194
+        - 197
+        - 198
+        - 263
+    '197':
+      id: 197
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 164
+        - 172
+        - 173
+        - 174
+        - 178
+        - 179
+        - 181
+        - 182
+        - 183
+        - 184
+        - 186
+        - 188
+        - 189
+        - 190
+        - 191
+        - 193
+        - 194
+        - 195
+        - 198
+        - 263
+    '198':
+      id: 198
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 164
+        - 172
+        - 173
+        - 174
+        - 178
+        - 179
+        - 181
+        - 182
+        - 183
+        - 184
+        - 186
+        - 188
+        - 189
+        - 190
+        - 191
+        - 193
+        - 194
+        - 195
+        - 197
+        - 263
+  global_chart_configuration:
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded: []
+    chartsInScope:
+    - 164
+    - 172
+    - 173
+    - 174
+    - 178
+    - 179
+    - 181
+    - 182
+    - 183
+    - 184
+    - 186
+    - 188
+    - 189
+    - 190
+    - 191
+    - 193
+    - 194
+    - 195
+    - 197
+    - 198
+    - 263
+  map_label_colors:
+    '1': '#1FA8C9'
+    2-3: '#454E7C'
+    4-7: '#5AC189'
+    8+: '#FF7F44'
+    Ablazione senza dispositivo: '#1FA8C9'
+    Altro / Nessuna procedura maggiore: '#454E7C'
+    Dispositivo senza ablazione: '#5AC189'
+    Ablazione e dispositivo: '#FF7F44'
+    Solo ILR: '#666666'
+    '> 75': '#1FA8C9'
+    60-75: '#454E7C'
+    40-60: '#5AC189'
+    < 40: '#FF7F44'
+    Sconosciuta: '#666666'
+    4+: '#5AC189'
+    ICD: '#1FA8C9'
+    PMK: '#454E7C'
+    ILR: '#5AC189'
+    Misto: '#FF7F44'
+    complicanze: '#1FA8C9'
+    ablazioni: '#454E7C'
+    impianti: '#5AC189'
+    follow_up: '#FF7F44'
+    procedure: '#666666'
+    sostituzioni: '#E04355'
+    chiusure: '#FCC700'
+    SUM(n_eventi): '#1f77b4'
+    Italia: '#1FA8C9'
+    Non classificato: '#454E7C'
+    Estero: '#5AC189'
+    Count(*): '#1FA8C9'
+    M: '#1FA8C9'
+    F: '#454E7C'
+    ? ''
+    : '#5AC189'
+    Nord: '#1FA8C9'
+    Sud: '#454E7C'
+    Centro: '#5AC189'
+    Isole: '#FF7F44'
+  color_scheme: ''
+  refresh_frequency: 0
+  color_scheme_domain: []
+  expanded_slices: {}
+  label_colors: {}
+  shared_label_colors:
+  - '1'
+  - 2-3
+  - 40-60
+  - 60-75
+  - < 40
+  - '> 75'
+  - ICD
+  - Non classificato
+  - PMK
+  - Sconosciuta
+  timed_refresh_immune_slices: []
+  cross_filters_enabled: true
+  default_filters: '{}'
+  native_filter_configuration:
+  - id: NATIVE_FILTER-66snVH-ym6fT3lqKKnrk2
+    controlValues:
+      enableEmptyFilter: false
+      defaultToFirstItem: false
+      creatable: true
+      multiSelect: true
+      searchAllOptions: false
+      inverseSelection: false
+    name: Ha dispositivo attivo
+    filterType: filter_select
+    targets:
+    - column:
+        name: ha_dispositivo_attivo
+      datasetUuid: c8ac9fa0-18d1-4def-a434-462355e8aac3
+    defaultDataMask:
+      extraFormData: {}
+      filterState: {}
+      ownState: {}
+    cascadeParentIds: []
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded:
+      - 174
+      - 186
+      - 197
+      - 198
+    type: NATIVE_FILTER
+    description: ''
+theme_uuid: null
+version: 1.0.0

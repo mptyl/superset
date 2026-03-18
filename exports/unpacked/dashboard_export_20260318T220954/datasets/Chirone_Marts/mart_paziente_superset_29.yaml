@@ -1,0 +1,523 @@
+table_name: mart_paziente_superset
+main_dttm_col: anno_ultima_procedura
+description: null
+default_endpoint: null
+offset: 0
+cache_timeout: null
+catalog: postgres
+schema: datawarehouse_marts
+sql: null
+params: null
+template_params: null
+filter_select_enabled: true
+fetch_values_predicate: null
+extra: null
+normalize_columns: false
+always_filter_main_dttm: false
+folders: null
+uuid: c8ac9fa0-18d1-4def-a434-462355e8aac3
+metrics:
+- metric_name: count
+  verbose_name: COUNT(*)
+  metric_type: count
+  expression: COUNT(*)
+  description: null
+  d3format: null
+  currency: null
+  extra: null
+  warning_text: null
+columns:
+- column_name: ha_dispositivo_attivo
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: BOOLEAN
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: TRUE se il paziente ha almeno un impianto ICD o PMK
+  python_date_format: null
+  extra: null
+- column_name: ha_espianto_ilr
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: BOOLEAN
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: TRUE se il paziente ha avuto almeno un espianto ILR
+  python_date_format: null
+  extra: null
+- column_name: anno_nascita
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: INTEGER
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: Anno di nascita mantenuto solo per flessibilita' analitica interna
+  python_date_format: null
+  extra: null
+- column_name: biomonitor
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: BOOLEAN
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: TRUE se il paziente ha il servizio Biomonitor attivo
+  python_date_format: null
+  extra: null
+- column_name: profilo_clinico
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: TEXT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: Categoria sintetica che descrive il profilo clinico del paziente
+  python_date_format: null
+  extra: null
+- column_name: nazionalita_gruppo
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: TEXT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: Categoria territoriale primaria Italia, Estero o Non classificato
+  python_date_format: null
+  extra: null
+- column_name: prov
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: TEXT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: Provincia di residenza, ammessa per analisi territoriali aggregate
+  python_date_format: null
+  extra: null
+- column_name: macro_area_residenza
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: TEXT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: Macro area di residenza o gruppo Estero/Non classificato
+  python_date_format: null
+  extra: null
+- column_name: ha_ilr
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: BOOLEAN
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: TRUE se il paziente ha almeno un ILR
+  python_date_format: null
+  extra: null
+- column_name: ha_ablazione
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: BOOLEAN
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: TRUE se il paziente ha almeno una ablazione
+  python_date_format: null
+  extra: null
+- column_name: anno_prima_procedura
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: INTEGER
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: Anno della prima procedura registrata per il paziente
+  python_date_format: null
+  extra: null
+- column_name: bucket_n_impianti_icd
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: TEXT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: Bucket del numero di impianti ICD per paziente
+  python_date_format: null
+  extra: null
+- column_name: bucket_n_controlli_icd
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: TEXT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: Bucket del numero di controlli ICD per paziente
+  python_date_format: null
+  extra: null
+- column_name: bucket_n_impianti_pmk
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: TEXT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: Bucket del numero di impianti PMK per paziente
+  python_date_format: null
+  extra: null
+- column_name: bucket_n_controlli_pmk
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: TEXT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: Bucket del numero di controlli PMK per paziente
+  python_date_format: null
+  extra: null
+- column_name: fascia_eta
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: TEXT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: Fascia di eta' calcolata rispetto all'anno corrente
+  python_date_format: null
+  extra: null
+- column_name: anno_ultima_procedura
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: INTEGER
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: Anno dell'ultima procedura registrata per il paziente
+  python_date_format: null
+  extra: null
+- column_name: descr_marca_gen_ilr
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: TEXT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: Marca descrittiva del generatore ILR piu' recente
+  python_date_format: null
+  extra: null
+- column_name: regione_residenza
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: TEXT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: Regione di residenza o gruppo Estero/Non classificato
+  python_date_format: null
+  extra: null
+- column_name: bucket_n_ablazioni
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: TEXT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: Bucket del numero di ablazioni per paziente
+  python_date_format: null
+  extra: null
+- column_name: bucket_carico_clinico
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: TEXT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: Bucket del carico clinico cumulativo del paziente
+  python_date_format: null
+  extra: null
+- column_name: tipo_dispositivo_prevalente
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: TEXT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: Categoria sintetica del dispositivo prevalente o assente
+  python_date_format: null
+  extra: null
+- column_name: modello_gen_ilr
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: TEXT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: Modello del generatore ILR piu' recente
+  python_date_format: null
+  extra: null
+- column_name: n_complicanze_totali
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: BIGINT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: Totale complicanze registrate per il paziente
+  python_date_format: null
+  extra: null
+- column_name: descr_marca_ultimo_icd
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: TEXT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: Marca descrittiva dell'ultimo ICD noto
+  python_date_format: null
+  extra: null
+- column_name: descr_marca_ultimo_pmk
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: TEXT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: Marca descrittiva dell'ultimo PMK noto
+  python_date_format: null
+  extra: null
+- column_name: modello_ultimo_icd
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: TEXT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: Modello dell'ultimo ICD noto
+  python_date_format: null
+  extra: null
+- column_name: modello_ultimo_pmk
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: TEXT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: Modello dell'ultimo PMK noto
+  python_date_format: null
+  extra: null
+- column_name: solvente
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: BOOLEAN
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: Flag solvente da dim_patient
+  python_date_format: null
+  extra: null
+- column_name: n_impianti_icd
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: BIGINT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: Numero di impianti ICD
+  python_date_format: null
+  extra: null
+- column_name: n_chiusure_icd
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: BIGINT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: Numero di chiusure ICD
+  python_date_format: null
+  extra: null
+- column_name: n_controlli_icd
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: BIGINT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: Numero di controlli ICD
+  python_date_format: null
+  extra: null
+- column_name: n_sostituzioni_icd
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: BIGINT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: Numero di sostituzioni ICD
+  python_date_format: null
+  extra: null
+- column_name: n_ilr
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: BIGINT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: Numero di procedure ILR
+  python_date_format: null
+  extra: null
+- column_name: n_impianti_pmk
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: BIGINT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: Numero di impianti PMK
+  python_date_format: null
+  extra: null
+- column_name: n_chiusure_pmk
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: BIGINT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: Numero di chiusure PMK
+  python_date_format: null
+  extra: null
+- column_name: n_controlli_pmk
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: BIGINT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: Numero di controlli PMK
+  python_date_format: null
+  extra: null
+- column_name: n_sostituzioni_pmk
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: BIGINT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: Numero di sostituzioni PMK
+  python_date_format: null
+  extra: null
+- column_name: n_ablazioni
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: BIGINT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: Numero di procedure ablazione
+  python_date_format: null
+  extra: null
+- column_name: n_cardioversioni
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: BIGINT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: Numero di cardioversioni elettriche
+  python_date_format: null
+  extra: null
+- column_name: sesso
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: TEXT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: Sesso del paziente
+  python_date_format: null
+  extra: null
+version: 1.0.0
+database_uuid: ce0083bd-d9b9-49cd-ae3f-c3df9e4237a9

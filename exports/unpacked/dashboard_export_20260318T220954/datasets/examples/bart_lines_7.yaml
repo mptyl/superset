@@ -1,0 +1,22 @@
+table_name: bart_lines
+main_dttm_col: null
+description: BART lines
+default_endpoint: null
+offset: 0
+cache_timeout: null
+catalog: null
+schema: public
+sql: null
+params: null
+template_params: null
+filter_select_enabled: true
+fetch_values_predicate: null
+extra: null
+normalize_columns: false
+always_filter_main_dttm: false
+folders: null
+uuid: a8b51df5-b6be-4f31-b7f6-f595c6b01404
+metrics: []
+columns: []
+version: 1.0.0
+database_uuid: a2dc77af-e654-49bb-b321-40f6b559a1ee

@@ -1,0 +1,57 @@
+slice_name: Trend annuale ablazioni
+description: null
+certified_by: null
+certification_details: null
+viz_type: echarts_timeseries_bar
+params:
+  datasource: 31__table
+  viz_type: echarts_timeseries_bar
+  x_axis: anno
+  metrics:
+  - expressionType: SQL
+    sqlExpression: SUM(n_eventi)
+    label: SUM(n_eventi)
+    optionName: metric_e052b340af
+    hasCustomLabel: false
+  adhoc_filters:
+  - clause: WHERE
+    expressionType: SIMPLE
+    subject: tipo_procedura
+    operator: ==
+    comparator: ablazione
+    sqlExpression: null
+    isExtra: false
+    isNew: false
+    filterOptionName: filter_cca097c80b
+  time_range: No filter
+  show_legend: false
+  row_limit: 10000
+  color_scheme: SUPERSET_DEFAULT
+  x_ticks_layout: auto
+  y_axis_format: SMART_NUMBER
+  columns: []
+query_context: '{"datasource": {"id": 31, "type": "table"}, "force": false, "queries":
+  [{"time_range": "No filter", "filters": [{"col": "tipo_procedura", "op": "==", "val":
+  "ablazione"}], "extras": {"having": "", "where": ""}, "applied_time_extras": {},
+  "columns": [{"columnType": "BASE_AXIS", "sqlExpression": "anno", "label": "anno",
+  "expressionType": "SQL", "isColumnReference": true}], "metrics": [{"expressionType":
+  "SQL", "sqlExpression": "SUM(n_eventi)", "label": "SUM(n_eventi)", "optionName":
+  "metric_e052b340af", "hasCustomLabel": false}], "orderby": [["SUM(n_eventi)", false]],
+  "annotation_layers": [], "row_limit": 10000, "series_limit": 0, "group_others_when_limit_reached":
+  false, "order_desc": true, "url_params": {}, "custom_params": {}, "custom_form_data":
+  {}, "time_offsets": [], "post_processing": [{"operation": "pivot", "options": {"index":
+  ["anno"], "columns": [], "aggregates": {"SUM(n_eventi)": {"operator": "mean"}},
+  "drop_missing_columns": true}}, {"operation": "flatten"}]}], "form_data": {"datasource":
+  "31__table", "viz_type": "echarts_timeseries_bar", "x_axis": "anno", "metrics":
+  [{"expressionType": "SQL", "sqlExpression": "SUM(n_eventi)", "label": "SUM(n_eventi)",
+  "optionName": "metric_e052b340af", "hasCustomLabel": false}], "adhoc_filters": [{"clause":
+  "WHERE", "expressionType": "SIMPLE", "subject": "tipo_procedura", "operator": "==",
+  "comparator": "ablazione", "sqlExpression": null, "isExtra": false, "isNew": false,
+  "filterOptionName": "filter_cca097c80b"}], "time_range": "No filter", "show_legend":
+  false, "row_limit": 10000, "color_scheme": "SUPERSET_DEFAULT", "x_ticks_layout":
+  "auto", "y_axis_format": "SMART_NUMBER", "columns": [], "result_format": "json",
+  "result_type": "full"}, "result_format": "json", "result_type": "full"}'
+cache_timeout: null
+uuid: 9d04bfd4-ea29-4cca-9744-a434d361290f
+version: 1.0.0
+dataset_uuid: 35bb07c1-07ff-468e-8185-e57157dc6ff5

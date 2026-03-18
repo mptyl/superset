@@ -1,0 +1,23 @@
+slice_name: OSM Long/Lat
+description: null
+certified_by: null
+certification_details: null
+viz_type: osm
+params:
+  all_columns:
+  - occupancy
+  all_columns_x: LON
+  all_columns_y: LAT
+  granularity_sqla: day
+  mapbox_style: https://tile.openstreetmap.org/{z}/{x}/{y}.png
+  row_limit: 500000
+  since: '2014-01-01'
+  until: now
+  viz_type: mapbox
+query_context: '{"datasource":{"id":3,"type":"table"},"force":false,"queries":[{"time_range":"2014-01-01
+  : now","granularity":"day","filters":[],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":["occupancy"],"metrics":[],"annotation_layers":[],"row_limit":500000,"series_limit":0,"group_others_when_limit_reached":false,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{}}],"form_data":{"all_columns":["occupancy"],"all_columns_x":"LON","all_columns_y":"LAT","datasource":"3__table","granularity_sqla":"day","mapbox_style":"https://tile.openstreetmap.org/{z}/{x}/{y}.png","row_limit":500000,"slice_id":239,"time_range":"2014-01-01
+  : now","viz_type":"osm","force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 607d9a10-505f-4bb7-b0ba-064333d53d5b
+version: 1.0.0
+dataset_uuid: 9177fafd-7c29-479a-9811-fc64f0a803db

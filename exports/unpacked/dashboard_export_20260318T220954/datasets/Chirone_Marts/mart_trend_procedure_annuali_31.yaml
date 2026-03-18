@@ -1,0 +1,79 @@
+table_name: mart_trend_procedure_annuali
+main_dttm_col: null
+description: null
+default_endpoint: null
+offset: 0
+cache_timeout: null
+catalog: postgres
+schema: datawarehouse_marts
+sql: null
+params: null
+template_params: null
+filter_select_enabled: true
+fetch_values_predicate: null
+extra: null
+normalize_columns: false
+always_filter_main_dttm: false
+folders: null
+uuid: 35bb07c1-07ff-468e-8185-e57157dc6ff5
+metrics:
+- metric_name: count
+  verbose_name: COUNT(*)
+  metric_type: count
+  expression: COUNT(*)
+  description: null
+  d3format: null
+  currency: null
+  extra: null
+  warning_text: null
+columns:
+- column_name: n_eventi
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: BIGINT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: Numero di eventi registrati per anno e tipo procedura
+  python_date_format: null
+  extra: null
+- column_name: tipo_procedura
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: TEXT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: Tipo procedura canonico usato come serie o dimensione
+  python_date_format: null
+  extra: null
+- column_name: famiglia_procedura
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: TEXT
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: Famiglia aggregata della procedura
+  python_date_format: null
+  extra: null
+- column_name: anno
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: INTEGER
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: Anno dell'evento clinico
+  python_date_format: null
+  extra: null
+version: 1.0.0
+database_uuid: ce0083bd-d9b9-49cd-ae3f-c3df9e4237a9

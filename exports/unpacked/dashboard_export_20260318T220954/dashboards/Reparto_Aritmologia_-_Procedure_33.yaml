@@ -1,0 +1,199 @@
+dashboard_title: Reparto Aritmologia - Procedure
+description: null
+css: ''
+slug: null
+certified_by: ''
+certification_details: ''
+published: false
+uuid: f7cb35e0-05b8-439f-8912-04e5e0e5f323
+position:
+  CHART-JeToY7KIGQqz7k9Ht5Klb:
+    children: []
+    id: CHART-JeToY7KIGQqz7k9Ht5Klb
+    meta:
+      chartId: 193
+      height: 50
+      sliceName: Numero ablazioni per paziente
+      uuid: 07f120c8-d788-4783-817d-db5d340c5793
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-ZyIPLQR97RqBJYlpfhHUV
+    type: CHART
+  CHART-KDV-IDbhD8Q4hQ994i4EP:
+    children: []
+    id: CHART-KDV-IDbhD8Q4hQ994i4EP
+    meta:
+      chartId: 164
+      height: 50
+      sliceName: Profilo clinico
+      uuid: 491e89e6-7824-4095-ae49-60250fa8e1ec
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-ZyIPLQR97RqBJYlpfhHUV
+    type: CHART
+  CHART-P1h4bKy38Rh0K8lXP0wa2:
+    children: []
+    id: CHART-P1h4bKy38Rh0K8lXP0wa2
+    meta:
+      chartId: 194
+      height: 50
+      sliceName: Numero procedure x paziente
+      uuid: e2bcb85c-87db-4e53-bad1-fc361b8f2397
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-z9FqnLIOB6sYbo-bOjEU_
+    type: CHART
+  CHART-aQmLinTQOVqHRCWlNU7kG:
+    children: []
+    id: CHART-aQmLinTQOVqHRCWlNU7kG
+    meta:
+      chartId: 181
+      height: 50
+      sliceName: Pazienti con ablazione - Overview Reparto
+      uuid: 171f48d6-e0d9-4878-b08d-1f8cb6bc86bd
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-ZyIPLQR97RqBJYlpfhHUV
+    type: CHART
+  CHART-sM1YABHJ81oXAxFFFJkWn:
+    children: []
+    id: CHART-sM1YABHJ81oXAxFFFJkWn
+    meta:
+      chartId: 195
+      height: 50
+      sliceName: 'Pazienti con complicanze per fascia eta '
+      uuid: ea6cc24a-68c5-4acd-8432-acc856a0baa0
+      width: 4
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-z9FqnLIOB6sYbo-bOjEU_
+    type: CHART
+  DASHBOARD_VERSION_KEY: v2
+  GRID_ID:
+    children:
+    - ROW-ZyIPLQR97RqBJYlpfhHUV
+    - ROW-z9FqnLIOB6sYbo-bOjEU_
+    id: GRID_ID
+    parents:
+    - ROOT_ID
+    type: GRID
+  HEADER_ID:
+    id: HEADER_ID
+    meta:
+      text: Reparto Aritmologia - Procedure
+    type: HEADER
+  ROOT_ID:
+    children:
+    - GRID_ID
+    id: ROOT_ID
+    type: ROOT
+  ROW-ZyIPLQR97RqBJYlpfhHUV:
+    children:
+    - CHART-aQmLinTQOVqHRCWlNU7kG
+    - CHART-KDV-IDbhD8Q4hQ994i4EP
+    - CHART-JeToY7KIGQqz7k9Ht5Klb
+    id: ROW-ZyIPLQR97RqBJYlpfhHUV
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-z9FqnLIOB6sYbo-bOjEU_:
+    children:
+    - CHART-P1h4bKy38Rh0K8lXP0wa2
+    - CHART-sM1YABHJ81oXAxFFFJkWn
+    id: ROW-z9FqnLIOB6sYbo-bOjEU_
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+metadata:
+  chart_configuration:
+    '164':
+      id: 164
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 181
+        - 193
+        - 194
+        - 195
+    '193':
+      id: 193
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 164
+        - 181
+        - 194
+        - 195
+    '194':
+      id: 194
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 164
+        - 181
+        - 193
+        - 195
+    '195':
+      id: 195
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 164
+        - 181
+        - 193
+        - 194
+  global_chart_configuration:
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded: []
+    chartsInScope:
+    - 164
+    - 181
+    - 193
+    - 194
+    - 195
+  map_label_colors:
+    '1': '#1FA8C9'
+    Ablazione senza dispositivo: '#1FA8C9'
+    Altro / Nessuna procedura maggiore: '#454E7C'
+    Dispositivo senza ablazione: '#5AC189'
+    Ablazione e dispositivo: '#FF7F44'
+    Solo ILR: '#666666'
+    2-3: '#454E7C'
+    4+: '#5AC189'
+    '> 75': '#1FA8C9'
+    60-75: '#454E7C'
+    40-60: '#5AC189'
+    < 40: '#FF7F44'
+    Sconosciuta: '#666666'
+    4-7: '#5AC189'
+    8+: '#FF7F44'
+  shared_label_colors:
+  - '1'
+  - 2-3
+  color_scheme: ''
+  refresh_frequency: 0
+  color_scheme_domain: []
+  expanded_slices: {}
+  label_colors: {}
+  timed_refresh_immune_slices: []
+  cross_filters_enabled: true
+  default_filters: '{}'
+theme_uuid: null
+version: 1.0.0

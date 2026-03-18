@@ -1,0 +1,76 @@
+slice_name: Trend procedure per famiglia - Trend Storici
+description: null
+certified_by: null
+certification_details: null
+viz_type: echarts_area
+params:
+  datasource: 31__table
+  viz_type: echarts_area
+  slice_id: 197
+  x_axis: anno
+  x_axis_sort_asc: true
+  metrics:
+  - expressionType: SQL
+    hasCustomLabel: false
+    label: Numero eventi
+    optionName: metric_mart_trend_procedure_annuali_sum_n_eventi
+    sqlExpression: SUM(n_eventi)
+  groupby:
+  - famiglia_procedura
+  adhoc_filters:
+  - clause: WHERE
+    comparator:
+    - ablazioni
+    - chiusure
+    - complicanze
+    - impianti
+    - sostituzioni
+    - follow_up
+    - procedure
+    datasourceWarning: false
+    expressionType: SIMPLE
+    filterOptionName: filter_tl9adiyu0f_lwzo8iap6i8
+    isExtra: false
+    isNew: false
+    operator: IN
+    operatorId: IN
+    sqlExpression: null
+    subject: famiglia_procedura
+  order_desc: true
+  row_limit: 10000
+  truncate_metric: true
+  show_empty_columns: true
+  comparison_type: values
+  annotation_layers: []
+  forecastPeriods: 10
+  forecastInterval: 0.8
+  x_axis_title_margin: 15
+  y_axis_title_margin: 30
+  y_axis_title_position: Left
+  sort_series_type: sum
+  color_scheme: supersetColors
+  seriesType: line
+  opacity: 0.2
+  show_legend: true
+  legendType: plain
+  legendOrientation: left
+  x_axis_time_format: smart_date
+  xAxisLabelInterval: auto
+  rich_tooltip: true
+  showTooltipTotal: true
+  tooltipTimeFormat: smart_date
+  y_axis_format: SMART_NUMBER
+  truncateXAxis: true
+  extra_form_data: {}
+  dashboards:
+  - 22
+query_context: '{"datasource":{"id":31,"type":"table"},"force":false,"queries":[{"filters":[{"col":"famiglia_procedura","op":"IN","val":["ablazioni","chiusure","complicanze","impianti","sostituzioni","follow_up","procedure"]}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":[{"columnType":"BASE_AXIS","sqlExpression":"anno","label":"anno","expressionType":"SQL","isColumnReference":true},"famiglia_procedura"],"metrics":[{"expressionType":"SQL","hasCustomLabel":false,"label":"Numero
+  eventi","optionName":"metric_mart_trend_procedure_annuali_sum_n_eventi","sqlExpression":"SUM(n_eventi)"}],"orderby":[[{"expressionType":"SQL","hasCustomLabel":false,"label":"Numero
+  eventi","optionName":"metric_mart_trend_procedure_annuali_sum_n_eventi","sqlExpression":"SUM(n_eventi)"},false]],"annotation_layers":[],"row_limit":10000,"series_columns":["famiglia_procedura"],"series_limit":0,"group_others_when_limit_reached":false,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{},"time_offsets":[],"post_processing":[{"operation":"pivot","options":{"index":["anno"],"columns":["famiglia_procedura"],"aggregates":{"Numero
+  eventi":{"operator":"mean"}},"drop_missing_columns":false}},{"operation":"rename","options":{"columns":{"Numero
+  eventi":null},"level":0,"inplace":true}},{"operation":"flatten"}]}],"form_data":{"datasource":"31__table","viz_type":"echarts_area","slice_id":197,"x_axis":"anno","x_axis_sort_asc":true,"metrics":[{"expressionType":"SQL","hasCustomLabel":false,"label":"Numero
+  eventi","optionName":"metric_mart_trend_procedure_annuali_sum_n_eventi","sqlExpression":"SUM(n_eventi)"}],"groupby":["famiglia_procedura"],"adhoc_filters":[{"clause":"WHERE","comparator":["ablazioni","chiusure","complicanze","impianti","sostituzioni","follow_up","procedure"],"datasourceWarning":false,"expressionType":"SIMPLE","filterOptionName":"filter_tl9adiyu0f_lwzo8iap6i8","isExtra":false,"isNew":false,"operator":"IN","operatorId":"IN","sqlExpression":null,"subject":"famiglia_procedura"}],"order_desc":true,"row_limit":10000,"truncate_metric":true,"show_empty_columns":true,"comparison_type":"values","annotation_layers":[],"forecastPeriods":10,"forecastInterval":0.8,"x_axis_title_margin":15,"y_axis_title_margin":30,"y_axis_title_position":"Left","sort_series_type":"sum","color_scheme":"supersetColors","seriesType":"line","opacity":0.2,"show_legend":true,"legendType":"plain","legendOrientation":"left","x_axis_time_format":"smart_date","xAxisLabelInterval":"auto","rich_tooltip":true,"showTooltipTotal":true,"tooltipTimeFormat":"smart_date","y_axis_format":"SMART_NUMBER","truncateXAxis":true,"extra_form_data":{},"dashboards":[22],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 840216d7-cea6-4cf9-a079-97808049a5dd
+version: 1.0.0
+dataset_uuid: 35bb07c1-07ff-468e-8185-e57157dc6ff5

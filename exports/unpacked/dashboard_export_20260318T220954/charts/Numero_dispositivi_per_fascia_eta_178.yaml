@@ -1,0 +1,68 @@
+slice_name: "Numero dispositivi per fascia et\xE0"
+description: null
+certified_by: null
+certification_details: null
+viz_type: table
+params:
+  datasource: 29__table
+  viz_type: table
+  slice_id: 178
+  query_mode: aggregate
+  groupby:
+  - fascia_eta
+  temporal_columns_lookup: {}
+  metrics:
+  - count
+  all_columns: []
+  percent_metrics: []
+  adhoc_filters:
+  - clause: WHERE
+    comparator: No filter
+    datasourceWarning: false
+    expressionType: SIMPLE
+    filterOptionName: filter_ogpubhvkld9_xrzqol4gbkq
+    isExtra: false
+    isNew: false
+    operator: TEMPORAL_RANGE
+    sqlExpression: null
+    subject: anno_ultima_procedura
+  - clause: WHERE
+    comparator:
+    - < 40
+    - 40-60
+    - 60-75
+    - '> 75'
+    - Sconosciuta
+    datasourceWarning: false
+    expressionType: SIMPLE
+    filterOptionName: filter_ebqah6iymef_x14h0upa12
+    isExtra: false
+    isNew: false
+    operator: IN
+    operatorId: IN
+    sqlExpression: null
+    subject: fascia_eta
+  order_by_cols: []
+  order_desc: true
+  server_page_length: 10
+  row_limit: 100
+  percent_metric_calculation: row_limit
+  table_timestamp_format: smart_date
+  allow_render_html: true
+  show_cell_bars: true
+  color_pn: true
+  comparison_color_scheme: Green
+  conditional_formatting: []
+  comparison_type: values
+  extra_form_data: {}
+  dashboards:
+  - 18
+  - 23
+query_context: '{"datasource":{"id":29,"type":"table"},"force":false,"queries":[{"filters":[{"col":"anno_ultima_procedura","op":"TEMPORAL_RANGE","val":"No
+  filter"},{"col":"fascia_eta","op":"IN","val":["< 40","40-60","60-75","> 75","Sconosciuta"]}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":["fascia_eta"],"metrics":["count"],"orderby":[["count",false]],"annotation_layers":[],"row_limit":100,"series_limit":0,"group_others_when_limit_reached":false,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{},"post_processing":[],"time_offsets":[]}],"form_data":{"datasource":"29__table","viz_type":"table","slice_id":178,"query_mode":"aggregate","groupby":["fascia_eta"],"temporal_columns_lookup":{},"metrics":["count"],"all_columns":[],"percent_metrics":[],"adhoc_filters":[{"clause":"WHERE","comparator":"No
+  filter","datasourceWarning":false,"expressionType":"SIMPLE","filterOptionName":"filter_ogpubhvkld9_xrzqol4gbkq","isExtra":false,"isNew":false,"operator":"TEMPORAL_RANGE","sqlExpression":null,"subject":"anno_ultima_procedura"},{"clause":"WHERE","comparator":["<
+  40","40-60","60-75","> 75","Sconosciuta"],"datasourceWarning":false,"expressionType":"SIMPLE","filterOptionName":"filter_ebqah6iymef_x14h0upa12","isExtra":false,"isNew":false,"operator":"IN","operatorId":"IN","sqlExpression":null,"subject":"fascia_eta"}],"order_by_cols":[],"order_desc":true,"server_page_length":10,"row_limit":100,"percent_metric_calculation":"row_limit","table_timestamp_format":"smart_date","allow_render_html":true,"show_cell_bars":true,"color_pn":true,"comparison_color_scheme":"Green","conditional_formatting":[],"comparison_type":"values","extra_form_data":{},"dashboards":[18,23],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 632a32dc-ef82-4b3c-90e2-b778aa6825de
+version: 1.0.0
+dataset_uuid: c8ac9fa0-18d1-4def-a434-462355e8aac3

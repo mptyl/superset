@@ -1,0 +1,23 @@
+table_name: new_members_daily
+main_dttm_col: null
+description: null
+default_endpoint: null
+offset: 0
+cache_timeout: null
+catalog: null
+schema: public
+sql: SELECT date, total_membership - lag(total_membership) OVER (ORDER BY date) AS
+  new_members FROM exported_stats
+params: null
+template_params: null
+filter_select_enabled: true
+fetch_values_predicate: null
+extra: null
+normalize_columns: false
+always_filter_main_dttm: false
+folders: null
+uuid: 9dd99cda-ff6b-4575-9a74-684d06e871ab
+metrics: []
+columns: []
+version: 1.0.0
+database_uuid: a2dc77af-e654-49bb-b321-40f6b559a1ee
