@@ -693,10 +693,6 @@ if (isDevMode) {
     static: {
       directory: path.join(process.cwd(), '../static/assets'),
     },
-    devMiddleware: {
-      // Write compiled bundles to disk so Flask can serve them directly on port 8088
-      writeToDisk: true,
-    },
   };
 }
 
