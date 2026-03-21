@@ -22739,4 +22739,3 @@ ALTER TABLE ONLY public.user_favorite_tag
 --
 
 \unrestrict tFgme7cMcXFGzhndsS4t6Jb0bw9Yvhtg4DGLfiBxOUZNz5J5EJX0AYXMRcdzik5
-
