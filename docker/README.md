@@ -43,6 +43,14 @@ To override environment variables locally, create a `./docker/.env-local` file (
 In order to override configuration settings locally, simply make a copy of [`./docker/pythonpath_dev/superset_config_local.example`](./pythonpath_dev/superset_config_local.example)
 into `./docker/pythonpath_dev/superset_config_docker.py` (git-ignored) and fill in your overrides.
 
+#### Optional Authentik integration
+
+This checkout now includes a tracked optional configuration file, [`./docker/pythonpath_dev/superset_config_authentik.py`](./pythonpath_dev/superset_config_authentik.py).
+
+To enable it, set `SUPERSET_AUTHENTIK_ENABLED=true` in `./docker/.env-local` and provide the related OIDC variables shown in [`./docker/.env-local.example`](./.env-local.example).
+
+If the flag is not enabled, Superset keeps using the standard `AUTH_DB` login flow.
+
 #### WebSocket Configuration
 
 To customize the WebSocket server configuration, create `./docker/superset-websocket/config.json` (git-ignored) based on [`./docker/superset-websocket/config.example.json`](./superset-websocket/config.example.json).

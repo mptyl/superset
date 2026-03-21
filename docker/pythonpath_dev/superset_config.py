@@ -129,6 +129,23 @@ if os.getenv("CYPRESS_CONFIG") == "true":
 
     sys.path.pop(0)
 
+
+def _truthy_env(name: str, default: bool = False) -> bool:
+    value = os.getenv(name)
+    if value is None:
+        return default
+    return value.strip().lower() in {"1", "true", "yes", "on"}
+
+
+if _truthy_env("SUPERSET_AUTHENTIK_ENABLED"):
+    import superset_config_authentik
+    from superset_config_authentik import *  # noqa: F403
+
+    logger.info(
+        "Loaded optional Authentik configuration at [%s]",
+        superset_config_authentik.__file__,
+    )
+
 #
 # Optionally import superset_config_docker.py (which will have been included on
 # the PYTHONPATH) in order to allow for local settings to be overridden
