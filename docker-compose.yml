@@ -58,6 +58,7 @@ services:
       - "${NGINX_PORT:-80}:80"
     extra_hosts:
       - "host.docker.internal:host-gateway"
+      - "aritmolab.policlinicosandonato.it:host-gateway"
     volumes:
       - ./docker/nginx/nginx.conf:/etc/nginx/nginx.conf:ro
       - ./docker/nginx/templates:/etc/nginx/templates:ro
@@ -100,6 +101,7 @@ services:
       - ${CYPRESS_PORT:-8081}:8081
     extra_hosts:
       - "host.docker.internal:host-gateway"
+      - "aritmolab.policlinicosandonato.it:host-gateway"
     user: *superset-user
     depends_on:
       superset-init:
@@ -112,6 +114,7 @@ services:
       - ${WEBSOCKET_PORT:-8080}:8080
     extra_hosts:
       - "host.docker.internal:host-gateway"
+      - "aritmolab.policlinicosandonato.it:host-gateway"
     depends_on:
       - redis
     # Mount everything in superset-websocket into container and
@@ -206,6 +209,7 @@ services:
     volumes: *superset-volumes
     extra_hosts:
       - "host.docker.internal:host-gateway"
+      - "aritmolab.policlinicosandonato.it:host-gateway"
     healthcheck:
       test: ["CMD-SHELL", "celery -A superset.tasks.celery_app:app inspect ping -d celery@$$HOSTNAME"]
     # Bump memory limit if processing selenium / thumbnails on superset-worker
