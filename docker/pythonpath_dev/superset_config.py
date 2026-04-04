@@ -159,3 +159,6 @@ try:
     )
 except ImportError:
     logger.info("Using default Docker config...")
+
+# Disable HTML sanitization for Handlebars charts (strips CSS classes)
+HTML_SANITIZATION = False

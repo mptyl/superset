@@ -185,7 +185,8 @@ COPY superset-frontend/package.json superset-frontend/
 COPY scripts/check-env.py scripts/
 
 # keeping for backward compatibility
-COPY --chmod=755 ./docker/entrypoints/run-server.sh /usr/bin/
+COPY ./docker/entrypoints/run-server.sh /usr/bin/
+RUN chmod 755 /usr/bin/run-server.sh
 
 # Some debian libs
 RUN /app/docker/apt-install.sh \
