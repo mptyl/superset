@@ -31,7 +31,10 @@ x-superset-volumes:
 
 x-common-build: &common-build
   context: .
-  target: dev
+  target: lean
+  args:
+    DEV_MODE: "false"
+    BUILD_TRANSLATIONS: "false"
   cache_from:
     - apache/superset-cache:3.10-slim-trixie
 
@@ -68,6 +71,8 @@ services:
     command: ["/app/docker/docker-bootstrap.sh", "app-gunicorn"]
     user: "root"
     restart: unless-stopped
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     ports:
       - 8088:8088
     depends_on:
@@ -106,6 +111,8 @@ services:
       - path: docker/.env-local # optional override
         required: false
     restart: unless-stopped
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     depends_on:
       superset-init:
         condition: service_completed_successfully
@@ -129,6 +136,8 @@ services:
       - path: docker/.env-local # optional override
         required: false
     restart: unless-stopped
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     depends_on:
       superset-init:
         condition: service_completed_successfully
