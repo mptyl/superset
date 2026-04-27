@@ -73,6 +73,7 @@ services:
     restart: unless-stopped
     extra_hosts:
       - "host.docker.internal:host-gateway"
+      - "auth-aritmolab.policlinicosandonato.it:host-gateway"
     ports:
       - 8088:8088
     depends_on:
@@ -113,6 +114,7 @@ services:
     restart: unless-stopped
     extra_hosts:
       - "host.docker.internal:host-gateway"
+      - "auth-aritmolab.policlinicosandonato.it:host-gateway"
     depends_on:
       superset-init:
         condition: service_completed_successfully
@@ -138,6 +140,7 @@ services:
     restart: unless-stopped
     extra_hosts:
       - "host.docker.internal:host-gateway"
+      - "auth-aritmolab.policlinicosandonato.it:host-gateway"
     depends_on:
       superset-init:
         condition: service_completed_successfully
