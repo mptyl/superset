@@ -45,8 +45,10 @@ interface Props {
 
 const TabsContainer = styled.div`
   height: 100%;
+  min-height: 0;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
   padding: ${({ theme }) => theme.sizeUnit * 3}px;
   padding-top: 2px;
 `;

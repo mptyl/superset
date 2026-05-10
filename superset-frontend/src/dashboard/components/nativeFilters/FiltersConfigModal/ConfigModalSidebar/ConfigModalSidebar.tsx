@@ -37,19 +37,32 @@ import { FILTER_TYPE, CUSTOMIZATION_TYPE } from '../DraggableFilter';
 import { isFilterId, isChartCustomizationId, isDivider } from '../utils';
 
 const StyledSidebarFlex = styled(Flex)`
+  flex: 0 0 290px;
+  height: 100%;
+  min-height: 0;
   min-width: 290px;
   max-width: 290px;
+  overflow: hidden;
   border-right: 1px solid ${({ theme }) => theme.colorBorderSecondary};
 `;
 
 const StyledHeaderFlex = styled(Flex)`
+  flex: 0 0 auto;
   padding: ${({ theme }) => theme.sizeUnit * 3}px;
 `;
 
 const BaseStyledCollapse = styled(Collapse)<{ isDragging: boolean }>`
   flex: 1;
-  overflow: auto;
+  min-height: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  .ant-collapse-content {
+    min-height: 0;
+  }
+
   .ant-collapse-content-box {
+    min-height: 0;
     padding: 0;
     ${({ isDragging }) =>
       isDragging &&
