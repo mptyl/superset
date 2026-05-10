@@ -65,6 +65,8 @@ const StyledWarning = styled(Icons.ExclamationCircleOutlined)`
 
 const Container = styled.div<{ isDragging: boolean }>`
   height: 100%;
+  min-height: 0;
+  max-height: calc(100vh - 240px);
   overflow-y: auto;
   ${({ isDragging }) =>
     isDragging &&

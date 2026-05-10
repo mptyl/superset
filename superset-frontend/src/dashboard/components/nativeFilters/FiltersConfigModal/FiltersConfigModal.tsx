@@ -64,14 +64,27 @@ import ConfigModalSidebar from './ConfigModalSidebar';
 export { ALLOW_DEPENDENCIES };
 
 const StyledModalBody = styled(BaseModalBody)`
+  min-height: 0;
+  overflow: hidden;
+
   .filters-list {
     width: ${({ theme }) => theme.sizeUnit * 50}px;
-    overflow: auto;
+    overflow: hidden;
   }
 `;
 
 const StyledMainFlex = styled(Flex)`
   height: 100%;
+  min-height: 0;
+  overflow: hidden;
+  width: 100%;
+`;
+
+const StyledForm = styled(BaseForm)`
+  height: 100%;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
 `;
 
 export const FILTERS_CONFIG_MODAL_TEST_ID = 'filters-config-modal';
@@ -554,7 +567,7 @@ function FiltersConfigModal({
     >
       <ErrorBoundary>
         <StyledModalBody expanded={expanded}>
-          <BaseForm
+          <StyledForm
             form={form}
             onValuesChange={handleValuesChange}
             layout="vertical"
@@ -619,7 +632,7 @@ function FiltersConfigModal({
                 handleModifyItem={handleModifyItem}
               />
             </StyledMainFlex>
-          </BaseForm>
+          </StyledForm>
         </StyledModalBody>
       </ErrorBoundary>
     </BaseModalWrapper>
