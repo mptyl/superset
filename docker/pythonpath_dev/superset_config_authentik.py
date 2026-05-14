@@ -38,7 +38,7 @@ class AuthentikSecurityManager(SupersetSecurityManager):
             return {}
 
         groups_claim = os.getenv("SUPERSET_AUTHENTIK_GROUPS_CLAIM", "groups")
-        me = self.appbuilder.sm.oauth_remotes[provider].get("userinfo").data
+        me = self.appbuilder.sm.oauth_remotes[provider].userinfo()
 
         groups = me.get(groups_claim, [])
         if isinstance(groups, str):
