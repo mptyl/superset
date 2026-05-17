@@ -174,7 +174,7 @@ export default function Login() {
                     iconPosition="start"
                     icon={getAuthIconElement(provider.name)}
                   >
-                    {t('Sign in with')} {capitalize(provider.name)}
+                    {t('Sign in to Aritmolab')}
                   </Button>
                 </Form.Item>
               ))}
@@ -193,7 +193,7 @@ export default function Login() {
                     iconPosition="start"
                     icon={getAuthIconElement(provider.name)}
                   >
-                    {t('Sign in with')} {capitalize(provider.name)}
+                    {t('Sign in to Aritmolab')}
                   </Button>
                 </Form.Item>
               ))}
