@@ -8,7 +8,19 @@
  */
 /******/ (() => { // webpackBootstrap
 /******/ 	"use strict";
-/******/ 	var __webpack_modules__ = ({});
+/******/ 	var __webpack_modules__ = ({
+
+/***/ "./src/service-worker.ts"
+/*!*******************************!*\
+  !*** ./src/service-worker.ts ***!
+  \*******************************/
+() {
+
+eval("{/**\n * Licensed to the Apache Software Foundation (ASF) under one\n * or more contributor license agreements.  See the NOTICE file\n * distributed with this work for additional information\n * regarding copyright ownership.  The ASF licenses this file\n * to you under the Apache License, Version 2.0 (the\n * \"License\"); you may not use this file except in compliance\n * with the License.  You may obtain a copy of the License at\n *\n *   http://www.apache.org/licenses/LICENSE-2.0\n *\n * Unless required by applicable law or agreed to in writing,\n * software distributed under the License is distributed on an\n * \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY\n * KIND, either express or implied.  See the License for the\n * specific language governing permissions and limitations\n * under the License.\n */ // Service Worker types (declared locally to avoid polluting global scope)\nself.addEventListener('install', (event)=>{\n    event.waitUntil(self.skipWaiting());\n});\nself.addEventListener('activate', (event)=>{\n    event.waitUntil(self.clients.claim());\n});\n\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvc2VydmljZS13b3JrZXIudHMiLCJtYXBwaW5ncyI6IkFBQUE7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBaUJBO0FBWUE7QUFDQTtBQUNBO0FBRUE7QUFDQTtBQUNBO0FBRUEiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9zdXBlcnNldC8uL3NyYy9zZXJ2aWNlLXdvcmtlci50cz83ZjU4Il0sInNvdXJjZXNDb250ZW50IjpbIi8qKlxuICogTGljZW5zZWQgdG8gdGhlIEFwYWNoZSBTb2Z0d2FyZSBGb3VuZGF0aW9uIChBU0YpIHVuZGVyIG9uZVxuICogb3IgbW9yZSBjb250cmlidXRvciBsaWNlbnNlIGFncmVlbWVudHMuICBTZWUgdGhlIE5PVElDRSBmaWxlXG4gKiBkaXN0cmlidXRlZCB3aXRoIHRoaXMgd29yayBmb3IgYWRkaXRpb25hbCBpbmZvcm1hdGlvblxuICogcmVnYXJkaW5nIGNvcHlyaWdodCBvd25lcnNoaXAuICBUaGUgQVNGIGxpY2Vuc2VzIHRoaXMgZmlsZVxuICogdG8geW91IHVuZGVyIHRoZSBBcGFjaGUgTGljZW5zZSwgVmVyc2lvbiAyLjAgKHRoZVxuICogXCJMaWNlbnNlXCIpOyB5b3UgbWF5IG5vdCB1c2UgdGhpcyBmaWxlIGV4Y2VwdCBpbiBjb21wbGlhbmNlXG4gKiB3aXRoIHRoZSBMaWNlbnNlLiAgWW91IG1heSBvYnRhaW4gYSBjb3B5IG9mIHRoZSBMaWNlbnNlIGF0XG4gKlxuICogICBodHRwOi8vd3d3LmFwYWNoZS5vcmcvbGljZW5zZXMvTElDRU5TRS0yLjBcbiAqXG4gKiBVbmxlc3MgcmVxdWlyZWQgYnkgYXBwbGljYWJsZSBsYXcgb3IgYWdyZWVkIHRvIGluIHdyaXRpbmcsXG4gKiBzb2Z0d2FyZSBkaXN0cmlidXRlZCB1bmRlciB0aGUgTGljZW5zZSBpcyBkaXN0cmlidXRlZCBvbiBhblxuICogXCJBUyBJU1wiIEJBU0lTLCBXSVRIT1VUIFdBUlJBTlRJRVMgT1IgQ09ORElUSU9OUyBPRiBBTllcbiAqIEtJTkQsIGVpdGhlciBleHByZXNzIG9yIGltcGxpZWQuICBTZWUgdGhlIExpY2Vuc2UgZm9yIHRoZVxuICogc3BlY2lmaWMgbGFuZ3VhZ2UgZ292ZXJuaW5nIHBlcm1pc3Npb25zIGFuZCBsaW1pdGF0aW9uc1xuICogdW5kZXIgdGhlIExpY2Vuc2UuXG4gKi9cblxuLy8gU2VydmljZSBXb3JrZXIgdHlwZXMgKGRlY2xhcmVkIGxvY2FsbHkgdG8gYXZvaWQgcG9sbHV0aW5nIGdsb2JhbCBzY29wZSlcbmRlY2xhcmUgY29uc3Qgc2VsZjoge1xuICBza2lwV2FpdGluZygpOiBQcm9taXNlPHZvaWQ+O1xuICBjbGllbnRzOiB7IGNsYWltKCk6IFByb21pc2U8dm9pZD4gfTtcbiAgYWRkRXZlbnRMaXN0ZW5lcihcbiAgICB0eXBlOiAnaW5zdGFsbCcgfCAnYWN0aXZhdGUnLFxuICAgIGxpc3RlbmVyOiAoZXZlbnQ6IHsgd2FpdFVudGlsKHByb21pc2U6IFByb21pc2U8dW5rbm93bj4pOiB2b2lkIH0pID0+IHZvaWQsXG4gICk6IHZvaWQ7XG59O1xuXG5zZWxmLmFkZEV2ZW50TGlzdGVuZXIoJ2luc3RhbGwnLCBldmVudCA9PiB7XG4gIGV2ZW50LndhaXRVbnRpbChzZWxmLnNraXBXYWl0aW5nKCkpO1xufSk7XG5cbnNlbGYuYWRkRXZlbnRMaXN0ZW5lcignYWN0aXZhdGUnLCBldmVudCA9PiB7XG4gIGV2ZW50LndhaXRVbnRpbChzZWxmLmNsaWVudHMuY2xhaW0oKSk7XG59KTtcblxuZXhwb3J0IHt9O1xuIl0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./src/service-worker.ts\n\n}");
+
+/***/ }
+
+/******/ 	});
 /************************************************************************/
 /******/ 	// The module cache
 /******/ 	var __webpack_module_cache__ = {};
@@ -30,6 +42,12 @@
 /******/ 		// Execute the module function
 /******/ 		var execOptions = { id: moduleId, module: module, factory: __webpack_modules__[moduleId], require: __webpack_require__ };
 /******/ 		__webpack_require__.i.forEach(function(handler) { handler(execOptions); });
+/******/ 		if (!execOptions.factory) {
+/******/ 			delete __webpack_module_cache__[moduleId];
+/******/ 			var e = new Error("Cannot find module '" + moduleId + "'");
+/******/ 			e.code = 'MODULE_NOT_FOUND';
+/******/ 			throw e;
+/******/ 		}
 /******/ 		module = execOptions.module;
 /******/ 		execOptions.factory.call(module.exports, module, module.exports, execOptions.require);
 /******/ 	
@@ -152,7 +170,7 @@
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("87b8af0cfc8db68cfb0b")
+/******/ 		__webpack_require__.h = () => ("33600179636550af323d")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/harmony module decorator */
@@ -563,7 +581,8 @@
 /******/ 									update.m,
 /******/ 									promises,
 /******/ 									currentUpdateApplyHandlers,
-/******/ 									updatedModules
+/******/ 									updatedModules,
+/******/ 									update.css
 /******/ 								);
 /******/ 								return promises;
 /******/ 							}, [])
@@ -869,10 +888,10 @@
 /******/ 		});
 /******/ 		var installedModules = {};
 /******/ 		var moduleToHandlerMapping = {
-/******/ 			"webpack/sharing/consume/default/react/react": () => (loadSingletonVersion("default", "react", true, [1,17,0,2], () => (() => (__webpack_require__(/*! react */ "./node_modules/react/index.js"))))),
-/******/ 			"webpack/sharing/consume/default/react-dom/react-dom": () => (loadSingletonVersion("default", "react-dom", true, [1,17,0,2], () => (() => (__webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js")))))
+/******/ 			"webpack/sharing/consume/default/react-dom/react-dom": () => (loadSingletonVersion("default", "react-dom", true, [1,17,0,2], () => (() => (__webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js"))))),
+/******/ 			"webpack/sharing/consume/default/react/react": () => (loadSingletonVersion("default", "react", true, [1,17,0,2], () => (() => (__webpack_require__(/*! react */ "./node_modules/react/index.js")))))
 /******/ 		};
-/******/ 		var initialConsumes = ["webpack/sharing/consume/default/react/react","webpack/sharing/consume/default/react-dom/react-dom"];
+/******/ 		var initialConsumes = ["webpack/sharing/consume/default/react-dom/react-dom","webpack/sharing/consume/default/react/react"];
 /******/ 		initialConsumes.forEach((id) => {
 /******/ 			__webpack_require__.m[id] = (module) => {
 /******/ 				// Handle case when module is used sync
@@ -1444,7 +1463,8 @@
 /******/ 	__webpack_require__.O(undefined, ["vendors","vendors-node_modules_rc-component_color-picker_es_index_js-node_modules_rc-component_mutate-o-484854","webpack_sharing_consume_default_react-dom_react-dom-webpack_sharing_consume_default_react_rea-153fef"], () => (__webpack_require__("./node_modules/@pmmmwh/react-refresh-webpack-plugin/client/ReactRefreshEntry.js")))
 /******/ 	__webpack_require__.O(undefined, ["vendors","vendors-node_modules_rc-component_color-picker_es_index_js-node_modules_rc-component_mutate-o-484854","webpack_sharing_consume_default_react-dom_react-dom-webpack_sharing_consume_default_react_rea-153fef"], () => (__webpack_require__("./node_modules/webpack-dev-server/client/index.js?protocol=ws%3A&hostname=0.0.0.0&port=0&pathname=%2Fws&logging=info&overlay=%7B%22errors%22%3Atrue%2C%22warnings%22%3Afalse%2C%22runtimeErrors%22%3A%22error%2520%253D%253E%2520%21%252FResizeObserver%252F.test%28error.message%29%22%7D&reconnect=10&hot=only&live-reload=false")))
 /******/ 	__webpack_require__.O(undefined, ["vendors","vendors-node_modules_rc-component_color-picker_es_index_js-node_modules_rc-component_mutate-o-484854","webpack_sharing_consume_default_react-dom_react-dom-webpack_sharing_consume_default_react_rea-153fef"], () => (__webpack_require__("./node_modules/webpack/hot/only-dev-server.js")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["vendors","vendors-node_modules_rc-component_color-picker_es_index_js-node_modules_rc-component_mutate-o-484854","webpack_sharing_consume_default_react-dom_react-dom-webpack_sharing_consume_default_react_rea-153fef"], () => (__webpack_require__("./node_modules/@pmmmwh/react-refresh-webpack-plugin/client/ErrorOverlayEntry.js")))
+/******/ 	__webpack_require__.O(undefined, ["vendors","vendors-node_modules_rc-component_color-picker_es_index_js-node_modules_rc-component_mutate-o-484854","webpack_sharing_consume_default_react-dom_react-dom-webpack_sharing_consume_default_react_rea-153fef"], () => (__webpack_require__("./node_modules/@pmmmwh/react-refresh-webpack-plugin/client/ErrorOverlayEntry.js")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["vendors","vendors-node_modules_rc-component_color-picker_es_index_js-node_modules_rc-component_mutate-o-484854","webpack_sharing_consume_default_react-dom_react-dom-webpack_sharing_consume_default_react_rea-153fef"], () => (__webpack_require__("./src/service-worker.ts")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()
