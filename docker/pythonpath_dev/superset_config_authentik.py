@@ -76,6 +76,12 @@ AUTH_ROLES_MAPPING = _oauth_role_mapping()
 CUSTOM_SECURITY_MANAGER = AuthentikSecurityManager
 
 _provider_name = os.getenv("SUPERSET_AUTHENTIK_PROVIDER_NAME", "authentik")
+_ca_bundle = os.getenv(
+    "SUPERSET_AUTHENTIK_CA_BUNDLE",
+    "/app/docker/pythonpath_dev/authentik-ca.crt",
+)
+os.environ.setdefault("REQUESTS_CA_BUNDLE", _ca_bundle)
+os.environ.setdefault("CURL_CA_BUNDLE", _ca_bundle)
 
 OAUTH_PROVIDERS = [
     {
@@ -86,6 +92,7 @@ OAUTH_PROVIDERS = [
             "client_id": _required_env("SUPERSET_AUTHENTIK_CLIENT_ID"),
             "client_secret": _required_env("SUPERSET_AUTHENTIK_CLIENT_SECRET"),
             "server_metadata_url": _required_env("SUPERSET_AUTHENTIK_METADATA_URL"),
+            "verify": _ca_bundle,
             "client_kwargs": {
                 "scope": os.getenv(
                     "SUPERSET_AUTHENTIK_SCOPES",
